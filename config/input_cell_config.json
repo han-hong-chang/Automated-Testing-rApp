@@ -1,0 +1,43 @@
+{
+  "Cell_Config": [
+    {
+      "Cell Type Name": "Macro Cell",
+      "Number of Cells": 3,
+      "band5G": "n79",
+      "cellsConfig": [
+        {
+          "Configured Tx Power": 40,
+          "Height": 10,
+          "Azimuth": 0,
+          "Tilt": 15,
+          "Advanced traffic model": "4:6"
+        }
+      ],
+      "cellsCoordinate": [
+        { "name": "s1", "x": 0, "y": 0 },
+        { "name": "s2", "x": 105, "y": 200 },
+        { "name": "s3", "x": 50, "y": 150 }
+      ]
+    },
+    {
+      "Cell Type Name": "Micro Cell",
+      "Number of Cells": 3,
+      "band5G": "n11",
+      "cellsConfig": [
+        {
+          "Configured Tx Power": 30,
+          "Height": 3,
+          "Azimuth": 0,
+          "Tilt": 5,
+          "Advanced traffic model": "7:3"
+        }
+      ],
+      "cellsCoordinate": [
+        { "name": "s4", "x": -30, "y": 305 },
+        { "name": "s5", "x": -15, "y": 30 },
+        { "name": "s6", "x": -5, "y": 30 }
+      ]
+    }
+  ]
+}
+
