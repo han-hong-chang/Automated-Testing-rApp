@@ -17,6 +17,24 @@
       "5QI": 8,
       "mobilityModel": "walking",
       "mobilitySpeed": 10
+    },
+    {
+      "numberOfUE": 200,
+      "location": "s26",
+      "slice": "eMBB",
+      "targetThroughput": 0.028,
+      "5QI": 8,
+      "mobilityModel": "walking",
+      "mobilitySpeed": 10
+    },
+    {
+      "numberOfUE": 200,
+      "location": "s35",
+      "slice": "eMBB",
+      "targetThroughput": 0.028,
+      "5QI": 8,
+      "mobilityModel": "stationary",
+      "mobilitySpeed": 0
     }
   ]
 }

@@ -2,24 +2,24 @@ import json
 import sys
 import os
 import copy
-from generate_rictest_config  import update_rictest_config
+from automated_test.generate_rictest_config  import update_rictest_config
 # Template to fill UE settings into
 RIC_TEST_UE_BASE_TEMPLATE = {
     "global-id": "slice-default-{ue}",
     "Description": "default slice for the UE",
+    "device_model": "SISO-1-0-1-Maximum",
     "serviceConfig": [
         {
-            "slice": "default",
-            "qosId": 4,
-            "targetTput": 0.2,
+            "qosId": 1,
+            "slice": "eMBB",
+            "targetTput": 0.028,
             "gbrTput": 0,
             "initial_call_state": "Active",
             "Average time between calls": 0,
-            "Average call duration": 10,
+            "Average call duration": 1,
             "timer_randomness": "Poisson"
         }
     ],
-    "ca_enabled": False,
     "seed": "0x7e5",
     "ueHeight": 1.5,
     "distribution": [
@@ -32,7 +32,6 @@ RIC_TEST_UE_BASE_TEMPLATE = {
         "type": "short range",
         "speed": 1.5,
         "roundtrip": "return",
-        "path": ""
     }
 }
 

@@ -1,0 +1,236 @@
+{
+    "$schema": "../o-ran-test-results-schema.json",
+    "schemaVersion": 1,
+    "testMetadata": {
+        "startDate": "2025-01-20T15:00:00-05:00",
+        "dutName": "Energy saving rApp",
+        "result": "PASS",
+        "testType": "functional",
+        "interfaceUnderTest": [
+            "smo.o1"
+        ],
+        "testId": "ABCD250002",
+        "configurationParameters": {
+            "frequencyRange5G": [
+                "fr1"
+            ],
+            "band5G": [
+                "n79"
+            ],
+            "nr-arfcn": 641668,
+            "subCarrierSpacing": "30kHz",
+            "totalTransmissionBandwidth": 100,
+            "duplexMode": "tdd",
+            "tddDlUlRatio": "7:3",
+            "centralFrequency": 3.5,
+            "viaviRICTestConfiguration": {
+                "antennaHeight": 3,
+                "antennaTilt": 5,
+                "antennaAzimuth": 0,
+                "txPower": 40,
+                "txCableLoss": 0,
+                "rxCableLoss": 0,
+                "rxSensitivity": -100,
+                "numberOfCells": 48,
+                "ruModel": "NR-3600_micro",
+                "advancedRfModel": "Isotropic-Urban-micro",
+                "advancedTrafficModel": "TDD_7:3",
+                "cellCoordinates": [
+                    {
+                        "Cell Name": "s1",
+                        "x": 100,
+                        "y": 200
+                    },
+                    {
+                        "Cell Name": "s2",
+                        "x": 300,
+                        "y": 400
+                    },
+                    {
+                        "Cell Name": "s3",
+                        "x": 500,
+                        "y": 600
+                    }
+                ]
+            }
+        }
+    },
+    "testbedComponents": [
+        {
+            "componentDescription": "RIC Simulator",
+            "manufacturerName": "VIAVI",
+            "manufacturerModel": "TERAVM RICTest",
+            "softwareVersion": "0.0.0",
+            "contacts": [
+                {
+                    "firstName": "Joe",
+                    "lastName": "Joe",
+                    "email": "joe@gapps.ntust.edu.tw"
+                }
+            ],
+            "configurationParameters": {
+                "numRxAntenna": 4,
+                "numTxAntenna": 4,
+                "numMimoLayers": 4,
+                "ipv4": true,
+                "ipv6": true
+            }
+        }
+    ],
+    "testLab": {
+        "name": "Test",
+        "address": "test",
+        "contacts": [
+            {
+                "firstName": "test",
+                "lastName": "test",
+                "email": "test@test.com"
+            }
+        ]
+    },
+    "testSpecifications": [
+        {
+            "expectationVerb": "EXPECT",
+            "expectationObject": [
+                {
+                    "objectType": "RAN_SUBNETWORK"
+                }
+            ],
+            "targetAssuranceTime": {
+                "startTime": "2025-04-20T23:05:00+08:00",
+                "endTime": "2025-04-20T23:15:00+08:00"
+            },
+            "contexts": [
+                {
+                    "contextType": "event",
+                    "contextName": "rAppActivationEvent",
+                    "attributes": [
+                        {
+                            "contextAttribute": "rAppName",
+                            "contextCondition": "IS_EQUAL_TO",
+                            "contextValueRange": [
+                                "EnergyOptimizer_v1.0"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "contextType": "stateAfterEvent",
+                    "contextReference": "EnergySaverActivated",
+                    "attributes": [
+                        {
+                            "contextAttribute": "TrafficLoad",
+                            "contextCondition": "IS_LESS_THAN",
+                            "contextValueRange": [
+                                "15"
+                            ],
+                            "contextUnit": "%"
+                        }
+                    ]
+                }
+            ],
+            "expectationTargets": [
+                {
+                    "targetName": "PEE.AvgPower",
+                    "targetCondition": "IS_GREATER_THAN_OR_EQUAL_TO",
+                    "targetValueRange": [
+                        "20"
+                    ],
+                    "targetUnit": "%",
+                    "targetScope": "SpecificCellGroup"
+                },
+                {
+                    "targetName": "DRB.UEThpDl",
+                    "targetCondition": "IS_LESS_THAN_OR_EQUAL_TO",
+                    "targetValueRange": [
+                        "10"
+                    ],
+                    "targetUnit": "%",
+                    "targetScope": "SpecificUEGroup"
+                }
+            ]
+        }
+    ],
+    "testResults": [
+        {
+            "number": "1",
+            "name": "scenario deployment: small cell",
+            "description": "testing small cell deployment",
+            "status": "mandatory",
+            "result": "PASS",
+            "metrics": [
+                {
+                    "description": "Cell category. Energy reduction ≥ 20% over 24-hour period",
+                    "status": "mandatory",
+                    "result": "PASS",
+                    "measurements": [
+                        {
+                            "name": "PEE.AvgPower",
+                            "units": "W",
+                            "values": [
+                                1
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "description": "Cell category. Energy reduction ≥ 20% over 24-hour period",
+                    "status": "mandatory",
+                    "result": "PASS",
+                    "measurements": [
+                        {
+                            "name": "DRB.UEThpDl",
+                            "units": "Gbps",
+                            "values": [
+                                1
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "notes": [
+                {
+                    "title": "A test note",
+                    "body": "The body of the test note with more details."
+                }
+            ]
+        },
+        {
+            "number": "1",
+            "name": "first group",
+            "description": "testing small cell deployment",
+            "status": "mandatory",
+            "result": "PASS",
+            "metrics": [
+                {
+                    "description": "Cell category. Energy reduction ≥ 20% over 24-hour period",
+                    "status": "mandatory",
+                    "result": "PASS",
+                    "measurements": [
+                        {
+                            "name": "PEE.AvgPower",
+                            "units": "W",
+                            "values": [
+                                1
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "description": "Cell category. Energy reduction ≥ 20% over 24-hour period",
+                    "status": "mandatory",
+                    "result": "PASS",
+                    "measurements": [
+                        {
+                            "name": "DRB.UEThpDl",
+                            "units": "Gbps",
+                            "values": [
+                                1
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -37,10 +37,10 @@ def update_rictest_config(cell_profiles,filled_ue_config, total_number_of_cells,
         else:
             raise ValueError("The 'Cells' structure is missing in the config.")
         # ✅ Update UE_Groups section with the final UE config
-        if "config" in conf_data and "UE_Groups" in conf_data["config"]:
-            conf_data["config"]["UE_Groups"] = filled_ue_config
+        if "config" in conf_data and "UE_Configuration" in conf_data["config"] and "UE_Groups" in conf_data["config"]["UE_Configuration"]:
+            conf_data["config"]["UE_Configuration"]["UE_Groups"] = filled_ue_config
         else:
-            raise ValueError("The 'UE_Groups' structure is missing in the RIC Test config.")
+            raise ValueError("The 'UE_Groups' structure is missing in the RIC Test config under 'config -> UE_Configuration'.")
 
         # ✅ Save the updated config back to the 'config' directory with a new name (or the same name)
         updated_config_file_path = os.path.join(config_dir, "updated_" + os.path.basename(config_file_path))

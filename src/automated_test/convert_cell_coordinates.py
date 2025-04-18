@@ -11,7 +11,7 @@ def load_json(file_path):
         return None
 
 def save_json(data, file_name):
-    output_dir = "temp_json"
+    output_dir = os.path.join("automated_test", "temp_json")
     os.makedirs(output_dir, exist_ok=True)  # 若目錄不存在則建立
     file_path = os.path.join(output_dir, file_name)
     try:

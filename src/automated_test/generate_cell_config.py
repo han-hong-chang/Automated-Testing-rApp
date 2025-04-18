@@ -1,9 +1,9 @@
 import json
 import sys
-from convert_cell_coordinates import process_cell_xy_coordinates
+from automated_test.convert_cell_coordinates import process_cell_xy_coordinates
 import os
 import copy
-from generate_rictest_config  import update_rictest_config
+from automated_test.generate_rictest_config  import update_rictest_config
 
 # Template to fill UE settings into
 RIC_TEST_CELL_BASE_TEMPLATE = {
@@ -69,10 +69,10 @@ def generate_cell_profiles(cell_configurations):
         # Determine whether the cell type is macro or micro
         if 'macro' in cell_type_name.lower():
             arf = "Isotropic-Urban-macro"
-            energy_profile = f"{band}_macro"
+            energy_profile = f"NR-342W"
         else:
             arf = "Isotropic-Urban-micro"
-            energy_profile = f"{band}_micro"
+            energy_profile = f"NR-60W"
 
         # Create a copy of the base template and update it with the cell-specific values
         profile = copy.deepcopy(RIC_TEST_CELL_BASE_TEMPLATE)
