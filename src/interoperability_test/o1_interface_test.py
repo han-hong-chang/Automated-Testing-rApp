@@ -92,30 +92,3 @@ def test_o1_ves_connection(vendor_name, target_source_id, check_interval=10, tim
         print(f"Error during log monitoring: {e}")
         return False  # Return False if there's an exception
 
-# Main process
-def main():
-    json_path = "test-spec.json"
-    # Step 1: Check if smo.o1 is listed in interfaceUnderTest
-    need_test, vendor_name = get_interface_and_vendor(json_path)
-    if not need_test:
-        print("Skipping NETCONF and VES tests.")
-        return
-
-    # Step 2: Test NETCONF connection
-    netconf_success = test_o1_netconf_connection()
-    netconf_result = "Pass" if netconf_success else "Failed"
-    if not netconf_success:
-        print("O1 Netconf: Failed")
-
-    # Step 3: Test VES connection
-    target_source_id = f"{vendor_name}-RIC-Test" if vendor_name else "Unknown-RIC-Test"
-    ves_success = test_o1_ves_connection(vendor_name, target_source_id)
-    ves_result = "Pass" if ves_success else "Failed"
-
-    # Final output for both tests
-    print(f"O1 Netconf: {netconf_result}")
-    print(f"O1 VES: {ves_result}")
-
-if __name__ == "__main__":
-    main()
-

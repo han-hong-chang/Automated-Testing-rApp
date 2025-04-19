@@ -1,5 +1,6 @@
 import json
 import os
+import time
 
 from automated_test.generate_cell_config import (
     load_cell_config,
@@ -12,7 +13,10 @@ from automated_test.generate_ue_config import (
 )
 from automated_test.generate_rictest_config import update_rictest_config
 from automated_test.convert_cell_coordinates import process_cell_xy_coordinates
-from automated_test.rictest_controller import start_simulation
+from automated_test.rictest_controller import (
+    start_rictest_simulation,
+    stop_rictest_simulation
+)
 from interoperability_test.o1_interface_test import (
     get_interface_and_vendor,
     test_o1_netconf_connection,
@@ -73,7 +77,7 @@ def main():
         reference_distance, 
         output_string
     )
-    simulation_response = start_simulation(config_filename="updated_RIC_Test_v2.4.conf", config_dir="config")
+    simulation_response = start_rictest_simulation(config_filename="updated_RIC_Test_v2.4.conf", config_dir="config")
     
     if simulation_response:
         print(f"Simulation started, HTTP Status Code: {simulation_response}")
@@ -92,8 +96,7 @@ def main():
     # Step 2: Test NETCONF connection
     netconf_success = test_o1_netconf_connection()
     netconf_result = "Pass" if netconf_success else "Failed"
-    if not netconf_success:
-        print("O1 Netconf: Failed")
+
 
     # Step 3: Test VES connection
     target_source_id = f"{vendor_name}-RIC-Test" if vendor_name else "Unknown-RIC-Test"
@@ -103,9 +106,8 @@ def main():
     # Final output for both tests
     print(f"O1 Netconf: {netconf_result}")
     print(f"O1 VES: {ves_result}")
-
-
-
-
+    time.sleep(10)
+    stop_result = stop_rictest_simulation()
+    print(stop_result)
 if __name__ == "__main__":
     main()
