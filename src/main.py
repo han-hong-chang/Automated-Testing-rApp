@@ -2,18 +2,18 @@ import json
 import os
 import time
 
-from automated_test.generate_cell_config import (
+from automated_test.ric_test_config_generator.generate_cell_config import (
     load_cell_config,
     generate_cell_profiles,
     calculate_total_number_of_cells
 )
-from automated_test.generate_ue_config import (
+from automated_test.ric_test_config_generator.generate_ue_config import (
     load_ue_config,
     generate_ue_profiles
 )
-from automated_test.generate_rictest_config import update_rictest_config
-from automated_test.convert_cell_coordinates import process_cell_xy_coordinates
-from automated_test.rictest_controller import (
+from automated_test.ric_test_config_generator.generate_rictest_config import update_rictest_config
+from automated_test.ric_test_config_generator.convert_cell_coordinates import process_cell_xy_coordinates
+from automated_test.ric_test_controller.rictest_controller import (
     start_rictest_simulation,
     stop_rictest_simulation
 )
@@ -31,7 +31,6 @@ def main():
     cell_data = load_cell_config()
     # Load UE configuration from file
     ue_data = load_ue_config()
-
     # Step 2: Generate cell profiles and coordinates
     # Generate cell profiles and positions based on the loaded cell configuration
     cell_profiles, positions = generate_cell_profiles(cell_data)
@@ -40,10 +39,9 @@ def main():
 
     # Step 3: Output cell profiles and coordinates to JSON files
     # Write the generated cell profiles to a JSON file (in RIC Test format)
-    with open(os.path.join("automated_test", "temp_json", "output_cell_config.json"), "w") as posfile:
+    with open(os.path.join("automated_test", "ric_test_config_generator", "temp_json", "output_cell_config.json"), "w") as posfile:
         json.dump(cell_profiles, posfile, indent=4)
-
-    with open(os.path.join("automated_test", "temp_json", "cell_positions.json"), "w") as posfile:
+    with open(os.path.join("automated_test","ric_test_config_generator", "temp_json", "cell_positions.json"), "w") as posfile:
         json.dump({"cells": positions}, posfile, indent=4)
     # Step 4: Calculate the total number of cells
     # Calculate the total number of cells based on the configuration data
@@ -51,12 +49,12 @@ def main():
     print(f"Total number of cells: {total_number_of_cells}")
 
     # Set the output file path for storing the converted XY coordinates
-    output_file = os.path.join("automated_test","temp_json", "converted_xy_coordinates.json")
+    output_file = os.path.join("automated_test","ric_test_config_generator","temp_json", "converted_xy_coordinates.json")
     
     # Process the cell positions and convert them to relative coordinates
     # This step moves all XY positions to a relative position and generates output coordinates
     reference_distance, output_string = process_cell_xy_coordinates(
-        os.path.join("automated_test","temp_json", "cell_positions.json"), 
+        os.path.join("automated_test","ric_test_config_generator","temp_json", "cell_positions.json"), 
         output_file
     )
 

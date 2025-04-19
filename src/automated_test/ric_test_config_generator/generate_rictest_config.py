@@ -8,7 +8,7 @@ def update_rictest_config(cell_profiles,filled_ue_config, total_number_of_cells,
         current_dir = os.path.dirname(os.path.abspath(__file__))
         
         # Construct the path to the config directory (relative to the current script)
-        config_dir = os.path.join(current_dir, '..', 'config')  # Adjust the relative path to 'config'
+        config_dir = os.path.join(current_dir, '..','..', 'config')  # Adjust the relative path to 'config'
         
         # Combine the config directory and the config file path to form the full file path
         full_config_file_path = os.path.join(config_dir, config_file_path)

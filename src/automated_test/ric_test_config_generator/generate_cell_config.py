@@ -1,9 +1,9 @@
 import json
 import sys
-from automated_test.convert_cell_coordinates import process_cell_xy_coordinates
+from automated_test.ric_test_config_generator.convert_cell_coordinates import process_cell_xy_coordinates
 import os
 import copy
-from automated_test.generate_rictest_config  import update_rictest_config
+from automated_test.ric_test_config_generator.generate_rictest_config  import update_rictest_config
 
 # Template to fill UE settings into
 RIC_TEST_CELL_BASE_TEMPLATE = {
@@ -30,8 +30,7 @@ def load_cell_config():
         # Get the directory of the current script
         current_dir = os.path.dirname(os.path.abspath(__file__))
         # Construct the path to the config directory
-        config_dir = os.path.join(current_dir, '..', 'config')
-        # Construct the full path to the input JSON file
+        config_dir = os.path.join(current_dir, '..', '..', 'config')        # Construct the full path to the input JSON file
         file_path = os.path.join(config_dir, 'input_cell_config.json')
 
         with open(file_path, 'r') as file:

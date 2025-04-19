@@ -2,7 +2,7 @@ import json
 import sys
 import os
 import copy
-from automated_test.generate_rictest_config  import update_rictest_config
+from automated_test.ric_test_config_generator.generate_rictest_config  import update_rictest_config
 # Template to fill UE settings into
 RIC_TEST_UE_BASE_TEMPLATE = {
     "global-id": "slice-default-{ue}",
@@ -49,7 +49,7 @@ def load_ue_config():
     """
     try:
         current_dir = os.path.dirname(os.path.abspath(__file__))
-        config_dir = os.path.join(current_dir, '..', 'config')
+        config_dir = os.path.join(current_dir, '..', '..', 'config')
         file_path = os.path.join(config_dir, 'input_ue_config.json')  # Path to UE config file
 
         with open(file_path, 'r') as file:
