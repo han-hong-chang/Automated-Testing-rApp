@@ -13,7 +13,12 @@ from automated_test.generate_ue_config import (
 from automated_test.generate_rictest_config import update_rictest_config
 from automated_test.convert_cell_coordinates import process_cell_xy_coordinates
 from automated_test.rictest_controller import start_simulation
-
+from interoperability_test.o1_interface_test import (
+    get_interface_and_vendor,
+    test_o1_netconf_connection,
+    test_o1_ves_connection
+    
+)
 
 def main():
 
@@ -70,12 +75,37 @@ def main():
     )
     simulation_response = start_simulation(config_filename="updated_RIC_Test_v2.4.conf", config_dir="config")
     
-    # 輸出結果
     if simulation_response:
         print(f"Simulation started, HTTP Status Code: {simulation_response}")
     else:
         print("Simulation failed to start.")
         
+    ## Interface interoperabbility test
+    print("Start interface interoperabbility test")
+    json_path = "test-spec.json"
+    # Step 1: Check if smo.o1 is listed in interfaceUnderTest
+    need_test, vendor_name = get_interface_and_vendor(json_path)
+    if not need_test:
+        print("Skipping NETCONF and VES tests.")
+        return
+
+    # Step 2: Test NETCONF connection
+    netconf_success = test_o1_netconf_connection()
+    netconf_result = "Pass" if netconf_success else "Failed"
+    if not netconf_success:
+        print("O1 Netconf: Failed")
+
+    # Step 3: Test VES connection
+    target_source_id = f"{vendor_name}-RIC-Test" if vendor_name else "Unknown-RIC-Test"
+    ves_success = test_o1_ves_connection(vendor_name, target_source_id)
+    ves_result = "Pass" if ves_success else "Failed"
+
+    # Final output for both tests
+    print(f"O1 Netconf: {netconf_result}")
+    print(f"O1 VES: {ves_result}")
+
+
+
 
 if __name__ == "__main__":
     main()
