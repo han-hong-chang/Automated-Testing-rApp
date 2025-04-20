@@ -25,13 +25,15 @@ from interoperability_test.o1_interface_test import (
     get_interface_and_vendor,
     test_o1_netconf_connection,
     test_o1_ves_connection
-    
 )
 from automated_test.rApp_validation_framework.evaluate_rapp_performance import (
     parse_pass_criteria,
     read_db_config,
     compare_two_runs,
-    )
+    connect_to_influxdb,
+    fetch_and_calculate_avg
+)
+
 def main():
 
     # Step 1: Load user configuration
@@ -83,15 +85,17 @@ def main():
         reference_distance, 
         output_string
     )
+    
+    # Start first RIC Test simulation
     simulation_response = start_rictest_simulation(config_filename="updated_RIC_Test_v2.4.conf", config_dir="config")
     
     if simulation_response:
         print(f"Simulation started, HTTP Status Code: {simulation_response}")
     else:
         print("Simulation failed to start.")
-        
-    ## Interface interoperabbility test
-    print("Start interface interoperabbility test")
+
+    ## Interface interoperability test
+    print("Start interface interoperability test")
     json_path = "test-spec.json"
     # Step 1: Check if smo.o1 is listed in interfaceUnderTest
     need_test, vendor_name = get_interface_and_vendor(json_path)
@@ -103,7 +107,6 @@ def main():
     netconf_success = test_o1_netconf_connection()
     netconf_result = "Pass" if netconf_success else "Failed"
 
-
     # Step 3: Test VES connection
     target_source_id = f"{vendor_name}-RIC-Test" if vendor_name else "Unknown-RIC-Test"
     ves_success = test_o1_ves_connection(vendor_name, target_source_id)
@@ -112,17 +115,51 @@ def main():
     # Final output for both tests
     print(f"O1 Netconf: {netconf_result}")
     print(f"O1 VES: {ves_result}")
+    
+    # Stop the first simulation and fetch data
+    print("⏳ Waiting for the first simulation (without rApp) to run for two minutes...")
     time.sleep(10)
     stop_result = stop_rictest_simulation()
     print(stop_result)
+    time.sleep(10)    
+    # Fetch and calculate first run data
     db_config = read_db_config()
     pass_criteria = parse_pass_criteria()
 
     if db_config:
         print("✅ Successfully loaded DB configuration.")
-        compare_two_runs(pass_criteria, db_config)
+        client = connect_to_influxdb(db_config)
+        
+        if client:
+            print("⏳ Fetching first simulation data...")
+            fields = [target['targetName'] for target in pass_criteria]
+            first_run_data = fetch_and_calculate_avg(client, db_config, fields, "-2m")
+
+            # Now, start the second simulation (with rApp)
+            simulation_response = start_rictest_simulation(config_filename="updated_RIC_Test_v2.4.conf", config_dir="config")
+            
+            if simulation_response:
+                print(f"Second simulation started, HTTP Status Code: {simulation_response}")
+            else:
+                print("Second simulation failed to start.")
+            
+            print("⏳ Waiting for the second simulation (with rApp) to run for two minutes...")
+            time.sleep(10)
+
+            # Stop the second simulation and fetch data
+            stop_result = stop_rictest_simulation()
+            print(stop_result)
+
+            # Fetch and calculate second run data
+            second_run_data = fetch_and_calculate_avg(client, db_config, fields, "-2m")
+
+            # Compare the two runs
+            compare_two_runs(first_run_data, second_run_data, pass_criteria)
+        else:
+            print("❌ Failed to connect to InfluxDB.")
     else:
         print("❌ Failed to load DB configuration.")
+
 
 if __name__ == "__main__":
     main()

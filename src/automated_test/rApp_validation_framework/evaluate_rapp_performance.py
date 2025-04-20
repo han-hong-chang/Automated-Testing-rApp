@@ -2,7 +2,6 @@ import json
 import os
 import time
 import pandas as pd
-import requests
 import logging
 from influxdb import DataFrameClient
 from configparser import ConfigParser
@@ -19,14 +18,12 @@ def read_db_config():
     """ Read the db_config.ini file and return database parameters """
     cfg = ConfigParser()
 
-    # Use relative path to locate the config file
     config_path = os.path.join(os.path.dirname(__file__), 'db_config.ini')
 
-    # Check if the file exists
     if not os.path.exists(config_path):
         print(f"❌ db_config.ini not found. Please check the path: {config_path}")
         return {}
-    
+
     cfg.read(config_path)
     
     config = {}
@@ -43,7 +40,6 @@ def read_db_config():
                 "bucket": cfg.get(section, "bucket"),
                 "address": cfg.get(section, "address"),
             }
-    print(config)
     return config
 
 def connect_to_influxdb(config):
@@ -113,8 +109,20 @@ def get_avg_value_from_data(df, field_name):
         logger.error(f"❌ Failed to calculate average for {field_name}: {e}")
         return None
 
-def compare_two_runs(expectation_targets, db_config):
-    """ Compare the data of two test runs """
+def fetch_and_calculate_avg(client, db_config, fields, start_time):
+    """ Fetch data and calculate average values for specified fields """
+    data = read_data(client, db_config["org"], db_config["bucket"], start=start_time, fields=fields)
+    avg_results = {}
+
+    for field in fields:
+        avg = get_avg_value_from_data(data, field)
+        if avg is not None:
+            avg_results[field] = avg
+    print("avg_results",avg_results)
+    return avg_results
+
+def compare_two_runs(first_run_data, second_run_data, expectation_targets):
+    """ Compare the data of two test runs based on pre-calculated averages """
     print("📋 Test expectations overview:")
     for target in expectation_targets:
         print(f"🔸 Target name: {target.get('targetName')}")
@@ -123,35 +131,14 @@ def compare_two_runs(expectation_targets, db_config):
         print(f"   Scope: {target.get('targetScope')}")
         print("")
 
-    print("⏳ Waiting for the first simulation (without rApp) to run for two minutes...")
-    time.sleep(10)
-
-    fields = [target['targetName'] for target in expectation_targets]
-    print(f"📌 Fields to fetch: {fields}")
-
-    t1_start = "-2m"
-    print(f"📥 Fetching data from the first simulation at {t1_start}")
-    client = connect_to_influxdb(db_config)
-    if client:
-        data1 = read_data(client, db_config["org"], db_config["bucket"], start=t1_start, fields=fields)
-    else:
-        return
-
-    print("⏳ Waiting for the second simulation (with rApp) to run for two minutes...")
-    time.sleep(10)
-
-    t2_start = "-2m"
-    print(f"📥 Fetching data from the second simulation at {t2_start}")
-    data2 = read_data(client, db_config["org"], db_config["bucket"], start=t2_start, fields=fields)
-
     for target in expectation_targets:
         field = target.get("targetName")
         condition = target.get("targetCondition")
         value_range = target.get("targetValueRange", [])
         unit = target.get("targetUnit", "")
         
-        avg1 = get_avg_value_from_data(data1, field)
-        avg2 = get_avg_value_from_data(data2, field)
+        avg1 = first_run_data.get(field)
+        avg2 = second_run_data.get(field)
 
         if avg1 is None or avg2 is None:
             print(f"⚠️ Skipping comparison for {field} due to missing data.")
@@ -209,4 +196,6 @@ def parse_pass_criteria():
     except Exception as e:
         print(f"❌ Failed to read or parse the JSON file: {e}")
         return []
+
+
 
