@@ -1,6 +1,10 @@
 import json
 import os
 import time
+import pandas as pd
+import requests
+import logging
+
 
 from automated_test.ric_test_config_generator.generate_cell_config import (
     load_cell_config,
@@ -23,7 +27,11 @@ from interoperability_test.o1_interface_test import (
     test_o1_ves_connection
     
 )
-
+from automated_test.rApp_validation_framework.evaluate_rapp_performance import (
+    parse_pass_criteria,
+    read_db_config,
+    compare_two_runs,
+    )
 def main():
 
     # Step 1: Load user configuration
@@ -107,5 +115,14 @@ def main():
     time.sleep(10)
     stop_result = stop_rictest_simulation()
     print(stop_result)
+    db_config = read_db_config()
+    pass_criteria = parse_pass_criteria()
+
+    if db_config:
+        print("✅ Successfully loaded DB configuration.")
+        compare_two_runs(pass_criteria, db_config)
+    else:
+        print("❌ Failed to load DB configuration.")
+
 if __name__ == "__main__":
     main()
