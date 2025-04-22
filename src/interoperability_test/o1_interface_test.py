@@ -4,39 +4,41 @@ import time
 from ncclient import manager
 import logging
 import re
-
+import os
 # Configure logger
-logging.basicConfig(level=logging.INFO)
-logger = logging.getLogger(__name__)
+
 
 # Function: Read JSON and check if 'smo.o1' is listed in interfaceUnderTest
-def get_interface_and_vendor(json_path):
+def get_interfaces_and_vendor():
+    json_path = os.path.join("config", "test_spec.json")
+
     with open(json_path, 'r') as f:
         data = json.load(f)
 
+    # Extract interface names (converted to lowercase for consistency)
     interfaces = data.get("testMetadata", {}).get("interfaceUnderTest", [])
-    vendor_name = None
+    interface_names = [iface.lower() for iface in interfaces]
 
+    # Extract vendor/manufacturer name from testbedComponents
     components = data.get("testbedComponents", [])
-    if components and "manufacturerName" in components[0]:
-        vendor_name = components[0]["manufacturerName"]
+    vendor_name = components[0].get("manufacturerName") if components else None
+    print(f"Start interface interoperability test with interfaces: {', '.join(interface_names)} and vendor: {vendor_name}")
 
-    return "smo.o1" in interfaces, vendor_name
-
+    return interface_names, vendor_name
 # Function: Test NETCONF connection
 def test_o1_netconf_connection():
     try:
         with manager.connect(
             host="192.168.8.28",
-            port=30901,
+            port=31677,
             username="root",
             password="viavi",
             hostkey_verify=False
         ) as m:
-            logger.info("Connected to NETCONF server successfully.")
+            print("Connected to NETCONF server successfully.")
             return True
     except Exception as e:
-        logger.error(f"Failed to connect to NETCONF server: {str(e)}")
+        print(f"Failed to connect to NETCONF server: {str(e)}")
         return False
 
 # Function: Monitor logs for VES sourceId and get pod name

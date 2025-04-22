@@ -22,7 +22,7 @@ from automated_test.ric_test_controller.rictest_controller import (
     stop_rictest_simulation
 )
 from interoperability_test.o1_interface_test import (
-    get_interface_and_vendor,
+    get_interfaces_and_vendor,
     test_o1_netconf_connection,
     test_o1_ves_connection
 )
@@ -33,14 +33,28 @@ from automated_test.rApp_validation_framework.evaluate_rapp_performance import (
     connect_to_influxdb,
     fetch_and_calculate_avg
 )
-
+from automated_test.test_spec_handler.query_test_spec import query_test_spec
+from automated_test.test_spec_handler.parse_test_spec import parse_test_spec
 def main():
-
-    # Step 1: Load user configuration
+    # Step 1: Print message indicating the test specification is being parsed
+    print("Querying test specification...")
+    test_spec = query_test_spec()
+    print("Input test spec from test-management-exposure:")
+    print(json.dumps(test_spec, indent=4)) 
+    parse_test_spec()
+    time.sleep(10)
     # Load cell configuration from file
     cell_data = load_cell_config()
+    print("Input Cell Configuration:")
+    print(json.dumps(cell_data, indent=4))  # Pretty-print the data
+    time.sleep(10)
     # Load UE configuration from file
     ue_data = load_ue_config()
+    print("Input UE Configuration:")
+    print(json.dumps(ue_data, indent=4))  # Pretty-print the data
+    time.sleep(10)
+    pass_criteria = parse_pass_criteria()
+    time.sleep(10)
     # Step 2: Generate cell profiles and coordinates
     # Generate cell profiles and positions based on the loaded cell configuration
     cell_profiles, positions = generate_cell_profiles(cell_data)
@@ -51,30 +65,32 @@ def main():
     # Write the generated cell profiles to a JSON file (in RIC Test format)
     with open(os.path.join("automated_test", "ric_test_config_generator", "temp_json", "output_cell_config.json"), "w") as posfile:
         json.dump(cell_profiles, posfile, indent=4)
+        
     with open(os.path.join("automated_test","ric_test_config_generator", "temp_json", "cell_positions.json"), "w") as posfile:
         json.dump({"cells": positions}, posfile, indent=4)
+        
+    with open(os.path.join("automated_test", "ric_test_config_generator", "temp_json", "output_ue_config.json"), "w") as posfile:
+        json.dump(ue_profiles, posfile, indent=4)
     # Step 4: Calculate the total number of cells
     # Calculate the total number of cells based on the configuration data
     total_number_of_cells = calculate_total_number_of_cells(cell_data)
-    print(f"Total number of cells: {total_number_of_cells}")
 
     # Set the output file path for storing the converted XY coordinates
     output_file = os.path.join("automated_test","ric_test_config_generator","temp_json", "converted_xy_coordinates.json")
     
     # Process the cell positions and convert them to relative coordinates
     # This step moves all XY positions to a relative position and generates output coordinates
+    print("For cell deployment setting...")  
     reference_distance, output_string = process_cell_xy_coordinates(
         os.path.join("automated_test","ric_test_config_generator","temp_json", "cell_positions.json"), 
         output_file
     )
 
-    # Display the results or an error message if processing fails
-    if reference_distance is not None:
-        print(f"Reference Distance: {reference_distance}")
-        print(f"Generated Coordinates: {output_string}")
-    else:
-        print("Processing failed!")
+    # Print the reference distance and the output string for clarity
+    print(f"Reference Distance: {reference_distance}")
+    print(f"Output String: {output_string}")
 
+    time.sleep(10)
     # Step 5: Update the RIC Test configuration file
     # Use the generated cell and UE profiles along with the total number of cells to update the RIC Test configuration
     update_rictest_config(
@@ -85,7 +101,7 @@ def main():
         reference_distance, 
         output_string
     )
-    
+    print("Start first RIC Test simulation...")  
     # Start first RIC Test simulation
     simulation_response = start_rictest_simulation(config_filename="updated_RIC_Test_v2.4.conf", config_dir="config")
     
@@ -93,12 +109,15 @@ def main():
         print(f"Simulation started, HTTP Status Code: {simulation_response}")
     else:
         print("Simulation failed to start.")
-
+    time.sleep(70)
     ## Interface interoperability test
-    print("Start interface interoperability test")
-    json_path = "test-spec.json"
     # Step 1: Check if smo.o1 is listed in interfaceUnderTest
-    need_test, vendor_name = get_interface_and_vendor(json_path)
+    print("⏳ Waiting for the first simulation (without rApp) to run for two minutes...")
+    stop_result = stop_rictest_simulation()                           ##demo完這個要移動到後面檢查interface後面
+    print(stop_result)
+    time.sleep(100)   
+    need_test, vendor_name = get_interfaces_and_vendor()
+    time.sleep(10)
     if not need_test:
         print("Skipping NETCONF and VES tests.")
         return
@@ -118,13 +137,12 @@ def main():
     
     # Stop the first simulation and fetch data
     print("⏳ Waiting for the first simulation (without rApp) to run for two minutes...")
-    time.sleep(10)
     stop_result = stop_rictest_simulation()
     print(stop_result)
     time.sleep(10)    
     # Fetch and calculate first run data
     db_config = read_db_config()
-    pass_criteria = parse_pass_criteria()
+
 
     if db_config:
         print("✅ Successfully loaded DB configuration.")
@@ -133,7 +151,7 @@ def main():
         if client:
             print("⏳ Fetching first simulation data...")
             fields = [target['targetName'] for target in pass_criteria]
-            first_run_data = fetch_and_calculate_avg(client, db_config, fields, "-2m")
+            first_run_data = fetch_and_calculate_avg(client, db_config, fields, "-60m")
 
             # Now, start the second simulation (with rApp)
             simulation_response = start_rictest_simulation(config_filename="updated_RIC_Test_v2.4.conf", config_dir="config")
@@ -144,14 +162,14 @@ def main():
                 print("Second simulation failed to start.")
             
             print("⏳ Waiting for the second simulation (with rApp) to run for two minutes...")
-            time.sleep(10)
+            time.sleep(20)
 
             # Stop the second simulation and fetch data
             stop_result = stop_rictest_simulation()
             print(stop_result)
 
             # Fetch and calculate second run data
-            second_run_data = fetch_and_calculate_avg(client, db_config, fields, "-2m")
+            second_run_data = fetch_and_calculate_avg(client, db_config, fields, "-55m")
 
             # Compare the two runs
             compare_two_runs(first_run_data, second_run_data, pass_criteria)

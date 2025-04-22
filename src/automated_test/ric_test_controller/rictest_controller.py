@@ -24,7 +24,6 @@ def start_rictest_simulation(config_filename="updated_RIC_Test_v2.4.conf", confi
         )
 
         status_code = result.stdout.strip()
-        print(f"HTTP Status Code: {status_code}")
 
         if result.stderr:
             print(f"Error output: {result.stderr}")

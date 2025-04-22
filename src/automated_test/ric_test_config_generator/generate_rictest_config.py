@@ -1,14 +1,14 @@
 import json
 import sys
 import os
-import copy
-def update_rictest_config(cell_profiles,filled_ue_config, total_number_of_cells, config_file_path, reference_distance=None, output_string=None):
+
+def update_rictest_config(cell_profiles, filled_ue_config, total_number_of_cells, config_file_path, reference_distance=None, output_string=None):
     try:
         # Get the directory of the current script (the directory where this script is located)
         current_dir = os.path.dirname(os.path.abspath(__file__))
         
         # Construct the path to the config directory (relative to the current script)
-        config_dir = os.path.join(current_dir, '..','..', 'config')  # Adjust the relative path to 'config'
+        config_dir = os.path.join(current_dir, '..', '..', 'config')  # Adjust the relative path to 'config'
         
         # Combine the config directory and the config file path to form the full file path
         full_config_file_path = os.path.join(config_dir, config_file_path)
@@ -36,6 +36,7 @@ def update_rictest_config(cell_profiles,filled_ue_config, total_number_of_cells,
             conf_data["config"]["Cells"]["Cell_Profiles"] = cell_profiles
         else:
             raise ValueError("The 'Cells' structure is missing in the config.")
+        
         # ✅ Update UE_Groups section with the final UE config
         if "config" in conf_data and "UE_Configuration" in conf_data["config"] and "UE_Groups" in conf_data["config"]["UE_Configuration"]:
             conf_data["config"]["UE_Configuration"]["UE_Groups"] = filled_ue_config
@@ -48,6 +49,14 @@ def update_rictest_config(cell_profiles,filled_ue_config, total_number_of_cells,
         with open(updated_config_file_path, 'w') as conf_file:
             json.dump(conf_data, conf_file, indent=4)
 
+
+        # Load the updated configuration file and print it
+        with open(updated_config_file_path, 'r') as updated_file:
+            updated_config = json.load(updated_file)
+        
+        # Print the updated configuration
+        print("Updated RIC Test Configuration:")
+        print(json.dumps(updated_config, indent=4))  # Pretty-print the updated config
         print(f"✅ Successfully updated RIC Test configuration file and saved to {updated_config_file_path}")
 
     except json.JSONDecodeError as e:
@@ -61,4 +70,3 @@ def update_rictest_config(cell_profiles,filled_ue_config, total_number_of_cells,
     except Exception as e:
         print(f"❌ Unexpected error: {e}")
         sys.exit(1)
-

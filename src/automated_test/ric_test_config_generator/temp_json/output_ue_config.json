@@ -1,64 +1,32 @@
 [
     {
-        "global-id": "stationary_ue-1",
-        "Description": "stationary UE",
+        "global-id": "Stationary_ue-1",
+        "Description": "Stationary UE",
+        "device_model": "SISO-1-0-1-Maximum",
         "serviceConfig": [
             {
+                "qosId": 1,
                 "slice": "eMBB",
-                "qosId": 9,
                 "targetTput": 0.028,
                 "gbrTput": 0,
                 "initial_call_state": "Active",
                 "Average time between calls": 0,
-                "Average call duration": 10,
+                "Average call duration": 1,
                 "timer_randomness": "Poisson"
             }
         ],
-        "ca_enabled": false,
         "seed": "0x7e5",
         "ueHeight": 1.5,
         "distribution": [
             {
-                "ues": 100,
+                "ues": 500,
                 "locations": "s1"
             }
         ],
         "mobility": {
             "type": "short range",
-            "speed": 0,
-            "roundtrip": "return",
-            "path": ""
-        }
-    },
-    {
-        "global-id": "walking_ue-2",
-        "Description": "walking UE",
-        "serviceConfig": [
-            {
-                "slice": "eMBB",
-                "qosId": 9,
-                "targetTput": 0.028,
-                "gbrTput": 0,
-                "initial_call_state": "Active",
-                "Average time between calls": 0,
-                "Average call duration": 10,
-                "timer_randomness": "Poisson"
-            }
-        ],
-        "ca_enabled": false,
-        "seed": "0x7e5",
-        "ueHeight": 1.5,
-        "distribution": [
-            {
-                "ues": 100,
-                "locations": "s15"
-            }
-        ],
-        "mobility": {
-            "type": "short range",
-            "speed": 1,
-            "roundtrip": "return",
-            "path": ""
+            "speed": 0.0,
+            "roundtrip": "return"
         }
     }
 ]

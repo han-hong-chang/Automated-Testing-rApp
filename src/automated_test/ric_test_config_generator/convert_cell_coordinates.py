@@ -11,13 +11,12 @@ def load_json(file_path):
         return None
 
 def save_json(data, file_name):
-    output_dir = os.path.join("automated_test", "temp_json")
+    output_dir = os.path.join("automated_test","ric_test_config_generator", "temp_json")
     os.makedirs(output_dir, exist_ok=True)  # 若目錄不存在則建立
     file_path = os.path.join(output_dir, file_name)
     try:
         with open(file_path, "w") as file:
             json.dump(data, file, indent=4)
-        print(f"Data saved to '{file_path}'.")
     except Exception as e:
         print(f"Error saving JSON file: {e}")
 def convert_latlon_to_xy(input_file, output_file):
@@ -66,11 +65,9 @@ def load_and_ensure_xy_coordinates(input_file, output_file):
     
     # Check if the data contains lat, lon or x, y
     if "lat" in data["cells"][0] and "lon" in data["cells"][0]:
-        print("Converting lat/lon to x/y...")
         convert_latlon_to_xy(input_file, output_file)
         data = load_json(output_file)  # Reload the data after conversion
-    else:
-        print("Using existing x/y coordinates.")
+
     
     # Regardless of whether it was converted or not, save the data to output
     save_json(data, output_file)

@@ -30,7 +30,7 @@ def load_cell_config():
         # Get the directory of the current script
         current_dir = os.path.dirname(os.path.abspath(__file__))
         # Construct the path to the config directory
-        config_dir = os.path.join(current_dir, '..', '..', 'config')        # Construct the full path to the input JSON file
+        config_dir = os.path.join(current_dir,  'temp_json')        # Construct the full path to the input JSON file
         file_path = os.path.join(config_dir, 'input_cell_config.json')
 
         with open(file_path, 'r') as file:

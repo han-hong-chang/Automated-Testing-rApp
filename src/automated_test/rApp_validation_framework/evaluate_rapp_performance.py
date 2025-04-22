@@ -66,7 +66,7 @@ def query_data(client, query, org):
             logger.error(f'Failed to query InfluxDB: {e}. Retrying in 60 seconds...')
             time.sleep(60)
 
-def read_data(client, org, bucket, start="-5m", stop=None, fields=None):
+def read_data(client, org, bucket, start="-60m", stop=None, fields=None):
     """ Read data from InfluxDB """
     if fields:
         print("📊 Fields to be fetched:")
@@ -166,14 +166,19 @@ def compare_two_runs(first_run_data, second_run_data, expectation_targets):
         else:
             print("⚠️ Unsupported condition or missing value range.")
 
+import json
+import os
+
 def parse_pass_criteria():
-    """ Parse test-spec.json file and return expected test criteria """
-    file_path = os.path.join(os.getcwd(), 'test-spec.json')
+    """ Parse test_spec.json file and return expected test criteria """
+    file_path = os.path.join(os.getcwd(),'config', 'test_spec.json')
     
     try:
         with open(file_path, 'r') as file:
             data = json.load(file)
         
+        print(json.dumps(data, indent=4))  # Print the parsed JSON data for inspection
+
         expectation_targets = data.get("testSpecifications", [])[0].get("expectationTargets", [])
         
         if expectation_targets:
@@ -187,6 +192,9 @@ def parse_pass_criteria():
                     "targetScope": target.get("targetScope")
                 }
                 results.append(result)
+            
+            print("Pass Criteria:")
+            print(json.dumps(results, indent=4))  # Print the pass criteria
             
             return results
         else:

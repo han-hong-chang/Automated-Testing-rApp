@@ -49,7 +49,7 @@ def load_ue_config():
     """
     try:
         current_dir = os.path.dirname(os.path.abspath(__file__))
-        config_dir = os.path.join(current_dir, '..', '..', 'config')
+        config_dir = os.path.join(current_dir,  'temp_json')
         file_path = os.path.join(config_dir, 'input_ue_config.json')  # Path to UE config file
 
         with open(file_path, 'r') as file:

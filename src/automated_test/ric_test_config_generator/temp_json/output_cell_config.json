@@ -9,27 +9,27 @@
                 "arf": "Isotropic-Urban-micro",
                 "atm": "7:3",
                 "energy_profile": "NR-60W",
-                "power": 31,
-                "height": 10,
+                "power": 30.0,
+                "height": 3,
                 "azimuth": 0,
-                "tilt": 15
+                "tilt": 5
             }
         ]
     },
     {
         "name": "Macro Cell",
         "band": "n78",
-        "areas": "s49,s50",
+        "areas": "s49,s50,s51,s52",
         "cellsConfig": [
             {
                 "cell_number": "C1",
                 "arf": "Isotropic-Urban-macro",
                 "atm": "7:3",
                 "energy_profile": "NR-342W",
-                "power": 40,
-                "height": 3,
+                "power": 40.0,
+                "height": 10,
                 "azimuth": 0,
-                "tilt": 5
+                "tilt": 15
             }
         ]
     }

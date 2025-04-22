@@ -1,0 +1,295 @@
+{
+  "schemaVersion": 1,
+  "testMetadata": {
+    "startDate": "2025-04-22T15:38:56.455799",
+    "dutName": "Energy saving rApp",
+    "interfaceUnderTest": [
+      "smo.o1"
+    ],
+    "testType": "functional",
+    "testId": "joetest",
+    "additionalContext": {
+      "ueContext": {
+        "numberOfUE": 500,
+        "location": "s1",
+        "targetThroughput": 0.028,
+        "slice": "eMBB",
+        "qosId": 1,
+        "mobilityModel": "Stationary",
+        "mobilitySpeed": 0.0
+      }
+    },
+    "configurationParameters": [
+      {
+        "deploymentScale": "micro",
+        "band5G": [
+          "n79"
+        ],
+        "tddDlUlRatio": "7:3",
+        "totalTransmitPowerIntoAntenna": 30.0,
+        "numberOfCells": 48,
+        "azimuth": 0,
+        "tilt": 5,
+        "height": 3,
+        "geoLocGrp": [
+          {
+            "latitude": 0,
+            "longitude": 0
+          },
+          {
+            "latitude": 0,
+            "longitude": 600
+          },
+          {
+            "latitude": 0,
+            "longitude": 15
+          },
+          {
+            "latitude": 0,
+            "longitude": 30
+          },
+          {
+            "latitude": -20,
+            "longitude": 0
+          },
+          {
+            "latitude": -20,
+            "longitude": 15
+          },
+          {
+            "latitude": -20,
+            "longitude": 30
+          },
+          {
+            "latitude": -40,
+            "longitude": 0
+          },
+          {
+            "latitude": -40,
+            "longitude": 15
+          },
+          {
+            "latitude": -40,
+            "longitude": 30
+          },
+          {
+            "latitude": -60,
+            "longitude": 0
+          },
+          {
+            "latitude": -60,
+            "longitude": 15
+          },
+          {
+            "latitude": -60,
+            "longitude": 30
+          },
+          {
+            "latitude": 0,
+            "longitude": 615
+          },
+          {
+            "latitude": 0,
+            "longitude": 630
+          },
+          {
+            "latitude": -20,
+            "longitude": 600
+          },
+          {
+            "latitude": -20,
+            "longitude": 615
+          },
+          {
+            "latitude": -20,
+            "longitude": 630
+          },
+          {
+            "latitude": -40,
+            "longitude": 600
+          },
+          {
+            "latitude": -40,
+            "longitude": 615
+          },
+          {
+            "latitude": -40,
+            "longitude": 630
+          },
+          {
+            "latitude": -60,
+            "longitude": 600
+          },
+          {
+            "latitude": -60,
+            "longitude": 615
+          },
+          {
+            "latitude": -60,
+            "longitude": 630
+          },
+          {
+            "latitude": -600,
+            "longitude": 0
+          },
+          {
+            "latitude": -600,
+            "longitude": 15
+          },
+          {
+            "latitude": -600,
+            "longitude": 30
+          },
+          {
+            "latitude": -620,
+            "longitude": 0
+          },
+          {
+            "latitude": -620,
+            "longitude": 15
+          },
+          {
+            "latitude": -620,
+            "longitude": 30
+          },
+          {
+            "latitude": -640,
+            "longitude": 0
+          },
+          {
+            "latitude": -640,
+            "longitude": 15
+          },
+          {
+            "latitude": -640,
+            "longitude": 30
+          },
+          {
+            "latitude": -660,
+            "longitude": 0
+          },
+          {
+            "latitude": -660,
+            "longitude": 15
+          },
+          {
+            "latitude": -660,
+            "longitude": 30
+          },
+          {
+            "latitude": -600,
+            "longitude": 600
+          },
+          {
+            "latitude": -600,
+            "longitude": 615
+          },
+          {
+            "latitude": -600,
+            "longitude": 630
+          },
+          {
+            "latitude": -620,
+            "longitude": 600
+          },
+          {
+            "latitude": -620,
+            "longitude": 615
+          },
+          {
+            "latitude": -620,
+            "longitude": 630
+          },
+          {
+            "latitude": -640,
+            "longitude": 600
+          },
+          {
+            "latitude": -640,
+            "longitude": 615
+          },
+          {
+            "latitude": -640,
+            "longitude": 630
+          },
+          {
+            "latitude": -660,
+            "longitude": 600
+          },
+          {
+            "latitude": -660,
+            "longitude": 615
+          },
+          {
+            "latitude": -660,
+            "longitude": 630
+          }
+        ]
+      },
+      {
+        "deploymentScale": "macro",
+        "band5G": [
+          "n78"
+        ],
+        "tddDlUlRatio": "7:3",
+        "totalTransmitPowerIntoAntenna": 40.0,
+        "numberOfCells": 4,
+        "azimuth": 0,
+        "tilt": 15,
+        "height": 10,
+        "geoLocGrp": [
+          {
+            "latitude": 40,
+            "longitude": -20
+          },
+          {
+            "latitude": 40,
+            "longitude": 580
+          },
+          {
+            "latitude": -560,
+            "longitude": -20
+          },
+          {
+            "latitude": -560,
+            "longitude": 580
+          }
+        ]
+      }
+    ]
+  },
+  "testSpecifications": [
+    {
+      "expectationVerb": "EXPECT",
+      "expectationObject": [
+        {
+          "objectType": "RAN_SUBNETWORK"
+        }
+      ],
+      "expectationTargets": [
+        {
+          "targetName": "PEE.AvgPower",
+          "targetCondition": "IS_GREATER_THAN_OR_EQUAL_TO",
+          "targetValueRange": [
+            20
+          ],
+          "targetUnit": "%",
+          "targetScope": "SpecificCellGroup"
+        },
+        {
+          "targetName": "DRB.UEThpDl",
+          "targetCondition": "IS_LESS_THAN_OR_EQUAL_TO",
+          "targetValueRange": [
+            10
+          ],
+          "targetUnit": "%",
+          "targetScope": "SpecificUEGroup"
+        }
+      ],
+      "targetAssuranceTime": {
+        "startTime": "2025-04-22T15:38:56.456195",
+        "endTime": "2025-04-22T15:38:56.456197"
+      }
+    }
+  ]
+}

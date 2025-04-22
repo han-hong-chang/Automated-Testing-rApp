@@ -1,0 +1,13 @@
+{
+  "UE_Config": [
+    {
+      "numberOfUE": 500,
+      "location": "s1",
+      "slice": "eMBB",
+      "targetThroughput": 0.028,
+      "5QI": 1,
+      "mobilityModel": "Stationary",
+      "mobilitySpeed": 0.0
+    }
+  ]
+}
