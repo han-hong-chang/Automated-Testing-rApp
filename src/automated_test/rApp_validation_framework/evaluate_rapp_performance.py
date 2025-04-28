@@ -69,7 +69,7 @@ def query_data(client, query, org):
 def read_data(client, org, bucket, start="-60m", stop=None, fields=None):
     """ Read data from InfluxDB """
     if fields:
-        print("📊 Fields to be fetched:")
+        print("Test target parameters to be fetched:")
         print(fields)  # Show which fields will be fetched
     else:
         print("⚠️ No fields specified, fetching all fields.")
