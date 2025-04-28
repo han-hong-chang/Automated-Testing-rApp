@@ -69,7 +69,7 @@ def query_data(client, query, org):
 def read_data(client, org, bucket, start="-60m", stop=None, fields=None):
     """ Read data from InfluxDB """
     if fields:
-        print("Test target parameters to be fetched:")
+        print("📊 Fields to be fetched:")
         print(fields)  # Show which fields will be fetched
     else:
         print("⚠️ No fields specified, fetching all fields.")
@@ -147,22 +147,22 @@ def compare_two_runs(first_run_data, second_run_data, expectation_targets):
         print(f"\n📊 Comparing field: {field}")
         print(f"   First simulation avg: {avg1}")
         print(f"   Second simulation avg: {avg2}")
-
         if condition == "IS_LESS_THAN_OR_EQUAL_TO" and value_range:
             threshold = avg1 * (float(value_range[0]) / 100)
-            print(f"   Expectation: <= {float(value_range[0])}% of first run → {threshold:.2f} {unit}")
+            print(f"   Expectation: second run <= {float(value_range[0])}% of the first run value (Threshold: {threshold:.2f})")
             if avg2 <= threshold:
                 print(f"✅ Success: {field} decreased as expected.")
             else:
-                print(f"❌ Failed: {field} did not decrease enough.")
+                print(f"❌ Failed: {field} did not decrease enough. (Second run: {avg2:.2f}, Threshold: {threshold:.2f})")
 
         elif condition == "IS_GREATER_THAN_OR_EQUAL_TO" and value_range:
             threshold = avg1 * (float(value_range[0]) / 100)
-            print(f"   Expectation: >= {float(value_range[0])}% of first run → {threshold:.2f} {unit}")
+            print(f"   Expectation: second run >= {float(value_range[0])}% of the first run value (Threshold: {threshold:.2f})")
             if avg2 >= threshold:
                 print(f"✅ Success: {field} increased as expected.")
             else:
-                print(f"❌ Failed: {field} did not increase enough.")
+                print(f"❌ Failed: {field} did not increase enough. (Second run: {avg2:.2f}, Threshold: {threshold:.2f})")
+
         else:
             print("⚠️ Unsupported condition or missing value range.")
 

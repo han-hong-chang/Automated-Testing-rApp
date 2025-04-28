@@ -9,7 +9,7 @@ import os
 
 
 # Function: Read JSON and check if 'smo.o1' is listed in interfaceUnderTest
-def get_interfaces_and_vendor():
+def get_test_interfaces():
     json_path = os.path.join("config", "test_spec.json")
 
     with open(json_path, 'r') as f:
@@ -19,12 +19,9 @@ def get_interfaces_and_vendor():
     interfaces = data.get("testMetadata", {}).get("interfaceUnderTest", [])
     interface_names = [iface.lower() for iface in interfaces]
 
-    # Extract vendor/manufacturer name from testbedComponents
-    components = data.get("testbedComponents", [])
-    vendor_name = components[0].get("manufacturerName") if components else None
-    print(f"Start interface interoperability test with interfaces: {', '.join(interface_names)} and vendor: {vendor_name}")
+    print(f"Start interface interoperability test with interfaces: {', '.join(interface_names)}")
 
-    return interface_names, vendor_name
+    return interface_names
 # Function: Test NETCONF connection
 def test_o1_netconf_connection():
     try:
@@ -42,26 +39,12 @@ def test_o1_netconf_connection():
         return False
 
 # Function: Monitor logs for VES sourceId and get pod name
-def test_o1_ves_connection(vendor_name, target_source_id, check_interval=10, timeout=100):
+def test_o1_ves_connection(target_source_id, check_interval=10, timeout=60):
     namespace = "o1ves"
-    pattern = "o1ves-dmaap-influxdb-adapter"
+    pod_name = "o1ves-common-dmaap-influxdb"
 
     try:
-        # Step 1: Get the pod name dynamically
-        result = subprocess.run(
-            ["sudo", "kubectl", "get", "pods", "-n", namespace],
-            stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True
-        )
-        
-        pod_name = None
-        for line in result.stdout.splitlines():
-            if pattern in line:
-                pod_name = line.split()[0]
-                break
-
-        if not pod_name:
-            print("Pod not found. Skipping VES test.")
-            return False
+        # ... Omitted the pod_name fetching part ...
 
         # Step 2: Monitor logs for SourceId in the selected pod
         print(f"Starting log monitoring for SourceId: {target_source_id} in pod '{pod_name}'...")
@@ -73,24 +56,26 @@ def test_o1_ves_connection(vendor_name, target_source_id, check_interval=10, tim
         start_time = time.time()
 
         while True:
+            print("Checking O1 VES connection status...")  # Log before each check
+
             logs = process.stdout.readline()
             if logs:
                 source_ids = re.findall(r'"sourceId":"([^"]*)"', logs)
                 if target_source_id in source_ids:
-                    print(f"VES Test Passed: Found SourceId {target_source_id}")
-                    return True  # Return True when sourceId is found
+                    print(f"✅ VES Test Passed: Found SourceId {target_source_id}")
+                    process.terminate()
+                    process.wait()
+                    return True
 
+            # Check if timeout is reached
             if time.time() - start_time > timeout:
-                print("VES Test Failed: Timeout reached without finding the target sourceId.")
-                return False  # Return False if timeout is reached
+                print("❌ VES Test Failed: Timeout reached without finding the target SourceId.")
+                process.terminate()
+                process.wait()
+                return False
 
-            print(f"Waiting for VES event from {vendor_name}...")
-            time.sleep(check_interval)
-
-        process.terminate()
-        process.wait()
+            time.sleep(check_interval)  # Wait for the specified interval before next check
 
     except Exception as e:
-        print(f"Error during log monitoring: {e}")
-        return False  # Return False if there's an exception
-
+        print(f"⚠️ Error during log monitoring: {e}")
+        return False

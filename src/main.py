@@ -22,7 +22,7 @@ from automated_test.ric_test_controller.rictest_controller import (
     stop_rictest_simulation
 )
 from interoperability_test.o1_interface_test import (
-    get_interfaces_and_vendor,
+    get_test_interfaces,
     test_o1_netconf_connection,
     test_o1_ves_connection
 )
@@ -44,27 +44,23 @@ def main():
     if test_spec_notification:  # Only proceed if test_spec_notification is not None
         print("Querying test specification...")
         time.sleep(10)
-        test_spec = query_test_spec()  # Query the test specification
+        test_spec = query_test_spec()
         print("Input test spec from test-management-exposure:")
-        print(json.dumps(test_spec, indent=4))
-        parse_test_spec()  # Call the function to parse the test spec
-        time.sleep(10)  # Wait before finishing
-
+        print(json.dumps(test_spec, indent=4)) 
+        parse_test_spec()
+        time.sleep(10)
         # Load cell configuration from file
         cell_data = load_cell_config()
         print("Input Cell Configuration:")
         print(json.dumps(cell_data, indent=4))  # Pretty-print the data
         time.sleep(10)
-
         # Load UE configuration from file
         ue_data = load_ue_config()
         print("Input UE Configuration:")
         print(json.dumps(ue_data, indent=4))  # Pretty-print the data
         time.sleep(10)
-
         pass_criteria = parse_pass_criteria()
         time.sleep(10)
-
         # Step 2: Generate cell profiles and coordinates
         # Generate cell profiles and positions based on the loaded cell configuration
         cell_profiles, positions = generate_cell_profiles(cell_data)
@@ -75,13 +71,12 @@ def main():
         # Write the generated cell profiles to a JSON file (in RIC Test format)
         with open(os.path.join("automated_test", "ric_test_config_generator", "temp_json", "output_cell_config.json"), "w") as posfile:
             json.dump(cell_profiles, posfile, indent=4)
-        
+            
         with open(os.path.join("automated_test","ric_test_config_generator", "temp_json", "cell_positions.json"), "w") as posfile:
             json.dump({"cells": positions}, posfile, indent=4)
-        
+            
         with open(os.path.join("automated_test", "ric_test_config_generator", "temp_json", "output_ue_config.json"), "w") as posfile:
             json.dump(ue_profiles, posfile, indent=4)
-
         # Step 4: Calculate the total number of cells
         # Calculate the total number of cells based on the configuration data
         total_number_of_cells = calculate_total_number_of_cells(cell_data)
@@ -102,7 +97,6 @@ def main():
         print(f"Output String: {output_string}")
 
         time.sleep(10)
-
         # Step 5: Update the RIC Test configuration file
         # Use the generated cell and UE profiles along with the total number of cells to update the RIC Test configuration
         update_rictest_config(
@@ -114,7 +108,6 @@ def main():
             output_string
         )
         print("Start first RIC Test simulation...")  
-
         # Start first RIC Test simulation
         simulation_response = start_rictest_simulation(config_filename="updated_RIC_Test_v2.4.conf", config_dir="config")
         
@@ -122,13 +115,8 @@ def main():
             print(f"Simulation started, HTTP Status Code: {simulation_response}")
         else:
             print("Simulation failed to start.")
-        
-        print("⏳ Waiting for the first simulation (without rApp) to run for two minutes...")
         time.sleep(10)
-
-        ## Interface interoperability test
-        # Step 1: Check if smo.o1 is listed in interfaceUnderTest
-        need_test, vendor_name = get_interfaces_and_vendor()
+        need_test= get_test_interfaces()
         time.sleep(10)
         if not need_test:
             print("Skipping NETCONF and VES tests.")
@@ -139,9 +127,10 @@ def main():
         netconf_result = "Pass" if netconf_success else "Failed"
 
         # Step 3: Test VES connection
-        target_source_id = f"{vendor_name}-RIC-Test" if vendor_name else "Unknown-RIC-Test"
-        ves_success = test_o1_ves_connection(vendor_name, target_source_id)
+        target_source_id = "VIAVI-RIC-Test"
+        ves_success = test_o1_ves_connection(target_source_id)
         ves_result = "Pass" if ves_success else "Failed"
+        time.sleep(10)
 
         # Final output for both tests
         print(f"O1 Netconf: {netconf_result}")
@@ -151,9 +140,9 @@ def main():
         stop_result = stop_rictest_simulation()
         print(stop_result)
         time.sleep(10)    
-
         # Fetch and calculate first run data
         db_config = read_db_config()
+
 
         if db_config:
             print("✅ Successfully loaded DB configuration.")
@@ -162,7 +151,7 @@ def main():
             if client:
                 print("⏳ Fetching first simulation data...")
                 fields = [target['targetName'] for target in pass_criteria]
-                first_run_data = fetch_and_calculate_avg(client, db_config, fields, "-60m")
+                first_run_data = fetch_and_calculate_avg(client, db_config, fields, "-90m")
 
                 # Now, start the second simulation (with rApp)
                 simulation_response = start_rictest_simulation(config_filename="updated_RIC_Test_v2.4.conf", config_dir="config")
@@ -173,16 +162,14 @@ def main():
                     print("Second simulation failed to start.")
                 
                 print("⏳ Waiting for the second simulation (with rApp) to run for two minutes...")
-                time.sleep(20)
+                time.sleep(60)
 
                 # Stop the second simulation and fetch data
                 stop_result = stop_rictest_simulation()
                 print(stop_result)
 
                 # Fetch and calculate second run data
-                second_run_data = fetch_and_calculate_avg(client, db_config, fields, "-55m")
-
-                # Compare the two runs
+                second_run_data = fetch_and_calculate_avg(client, db_config, fields, "-90m")          # Compare the two runs
                 compare_two_runs(first_run_data, second_run_data, pass_criteria)
             else:
                 print("❌ Failed to connect to InfluxDB.")
