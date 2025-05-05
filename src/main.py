@@ -117,7 +117,7 @@ def main():
             print("Simulation failed to start.")
         time.sleep(10)
         need_test= get_test_interfaces()
-        time.sleep(10)
+        time.sleep(90)
         if not need_test:
             print("Skipping NETCONF and VES tests.")
             return

@@ -15,7 +15,7 @@ def start_rictest_simulation(config_filename="updated_RIC_Test_v2.4.conf", confi
     try:
         result = subprocess.run(
             ["sudo", "curl", "-s", "-o", "response.json", "-w", "%{http_code}",
-             "-X", "POST", "http://192.168.8.28:32441/sba/tests/run",
+             "-X", "POST", "http://192.168.8.28:30000/sba/tests/run",
              "-H", "accept: application/json", "-H", "Content-Type: application/json",
              "-d", f"@{config_path}"],
             stdout=subprocess.PIPE,
@@ -50,7 +50,7 @@ def stop_rictest_simulation():
             return "⚠️ 'id' not found in JSON."  # If no 'id' found, return a warning message
 
         # Construct the URL for the DELETE request
-        url = f"http://192.168.8.28:32441/sba/tests/status/{test_id}"
+        url = f"http://192.168.8.28:30000/sba/tests/status/{test_id}"
         
         # Send the DELETE request to stop the RIC test
         r = requests.delete(url)

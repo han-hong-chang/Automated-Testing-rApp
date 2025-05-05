@@ -5,7 +5,7 @@ def parse_test_spec():
     # Path settings
     current_dir = os.path.dirname(os.path.abspath(__file__))
 
-    file_path = os.path.join("..", "..", "config", "test_spec.json")
+    file_path = os.path.join("config", "test_spec.json")
     output_dir = os.path.normpath(os.path.join(current_dir, "..", "ric_test_config_generator", "temp_json"))
 
     # Create the directory if it doesn't exist
