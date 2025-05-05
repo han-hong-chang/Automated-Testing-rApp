@@ -7,7 +7,7 @@
       "smo.o1"
     ],
     "testType": "functional",
-    "testId": "joetest",
+    "testId": "joe-test",
     "additionalContext": {
       "ueContext": {
         "numberOfUE": 500,
@@ -269,18 +269,18 @@
       "expectationTargets": [
         {
           "targetName": "PEE.AvgPower",
-          "targetCondition": "IS_GREATER_THAN_OR_EQUAL_TO",
+          "targetCondition": "IS_LESS_THAN_OR_EQUAL_TO",
           "targetValueRange": [
-            20
+            80
           ],
           "targetUnit": "%",
           "targetScope": "SpecificCellGroup"
         },
         {
           "targetName": "DRB.UEThpDl",
-          "targetCondition": "IS_LESS_THAN_OR_EQUAL_TO",
+          "targetCondition": "IS_GREATER_THAN_OR_EQUAL_TO",
           "targetValueRange": [
-            10
+            90
           ],
           "targetUnit": "%",
           "targetScope": "SpecificUEGroup"

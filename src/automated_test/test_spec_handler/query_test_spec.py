@@ -3,7 +3,7 @@ import json
 import os
 def query_test_spec(
     base_url="http://192.168.8.111:8000",
-    subnetwork_id="joetest",
+    subnetwork_id="joe-test",
     output_filename="test_spec.json"
 ):
     """
