@@ -38,7 +38,8 @@ from automated_test.rApp_validation_framework.evaluate_rapp_performance import (
 )
 from automated_test.test_spec_handler.query_test_spec import query_test_spec
 from automated_test.test_spec_handler.parse_test_spec import parse_test_spec
-
+from automated_test.teiv_handler.load_gnb_config import generate_payload_from_gnb_config
+from automated_test.teiv_handler.teiv_service_sender import send_payload_to_teiv_kafka
 app = Flask(__name__)
 triggered = False
 lock = threading.Lock()
@@ -62,6 +63,18 @@ def main():
     ue_data = load_ue_config()
     print("Input UE Configuration:")
     print(json.dumps(ue_data, indent=4))  # Pretty-print the data
+    time.sleep(10)
+        # === Begin TEIV gNB config handling ===
+    base_dir = os.path.dirname(os.path.abspath(__file__))
+    input_gnb_config_path = os.path.join(base_dir, "automated_test", "ric_test_config_generator", "temp_json", "input_gnb_config.json")
+    output_payload_path = os.path.join(base_dir, "automated_test", "ric_test_config_generator", "temp_json", "output_gnb_config.json")
+
+    # 1. Generate the TEIV payload JSON from the input gNB config
+    generate_payload_from_gnb_config(input_gnb_config_path, output_payload_path)
+    time.sleep(10)
+    # 2. Send the generated payload JSON to TEIV Kafka
+    send_payload_to_teiv_kafka(output_payload_path)
+    # === End TEIV gNB config handling ===
     time.sleep(10)
     pass_criteria = parse_pass_criteria()
     time.sleep(10)

@@ -1,0 +1,4814 @@
+{
+  "entities": [
+    {
+      "o-ran-smo-teiv-oam:ManagedElement": [
+        {
+          "id": "VIAVI-Rictest",
+          "attributes": {
+            "status": "Assigned"
+          }
+        }
+      ],
+      "o-ran-smo-teiv-ran:ODUFunction": [
+        {
+          "id": "1",
+          "attributes": {
+            "gNBDUId": "1",
+            "gNBId": "1193047",
+            "gNBDUName": "S1",
+            "gNBIdLength": "24",
+            "peeParametersList": [
+              {
+                "idx": "0",
+                "siteIdentification": "S1",
+                "siteLatitude": "0.0",
+                "siteLongitude": "0.0",
+                "siteAltitude": "20.1"
+              }
+            ],
+            "status": "Assigned"
+          }
+        },
+        {
+          "id": "2",
+          "attributes": {
+            "gNBDUId": "2",
+            "gNBId": "1193048",
+            "gNBDUName": "S2",
+            "gNBIdLength": "24",
+            "peeParametersList": [
+              {
+                "idx": "0",
+                "siteIdentification": "S2",
+                "siteLatitude": "0.0",
+                "siteLongitude": "0.0",
+                "siteAltitude": "20.2"
+              }
+            ],
+            "status": "Assigned"
+          }
+        },
+        {
+          "id": "3",
+          "attributes": {
+            "gNBDUId": "3",
+            "gNBId": "1193049",
+            "gNBDUName": "S3",
+            "gNBIdLength": "24",
+            "peeParametersList": [
+              {
+                "idx": "0",
+                "siteIdentification": "S3",
+                "siteLatitude": "0.0",
+                "siteLongitude": "0.0",
+                "siteAltitude": "20.3"
+              }
+            ],
+            "status": "Assigned"
+          }
+        },
+        {
+          "id": "4",
+          "attributes": {
+            "gNBDUId": "4",
+            "gNBId": "1193050",
+            "gNBDUName": "S4",
+            "gNBIdLength": "24",
+            "peeParametersList": [
+              {
+                "idx": "0",
+                "siteIdentification": "S4",
+                "siteLatitude": "0.0",
+                "siteLongitude": "0.0",
+                "siteAltitude": "20.4"
+              }
+            ],
+            "status": "Assigned"
+          }
+        },
+        {
+          "id": "5",
+          "attributes": {
+            "gNBDUId": "5",
+            "gNBId": "1193051",
+            "gNBDUName": "S5",
+            "gNBIdLength": "24",
+            "peeParametersList": [
+              {
+                "idx": "0",
+                "siteIdentification": "S5",
+                "siteLatitude": "0.0",
+                "siteLongitude": "0.0",
+                "siteAltitude": "20.5"
+              }
+            ],
+            "status": "Assigned"
+          }
+        },
+        {
+          "id": "6",
+          "attributes": {
+            "gNBDUId": "6",
+            "gNBId": "1193052",
+            "gNBDUName": "S6",
+            "gNBIdLength": "24",
+            "peeParametersList": [
+              {
+                "idx": "0",
+                "siteIdentification": "S6",
+                "siteLatitude": "0.0",
+                "siteLongitude": "0.0",
+                "siteAltitude": "20.6"
+              }
+            ],
+            "status": "Assigned"
+          }
+        },
+        {
+          "id": "7",
+          "attributes": {
+            "gNBDUId": "7",
+            "gNBId": "1193053",
+            "gNBDUName": "S7",
+            "gNBIdLength": "24",
+            "peeParametersList": [
+              {
+                "idx": "0",
+                "siteIdentification": "S7",
+                "siteLatitude": "0.0",
+                "siteLongitude": "0.0",
+                "siteAltitude": "20.7"
+              }
+            ],
+            "status": "Assigned"
+          }
+        },
+        {
+          "id": "8",
+          "attributes": {
+            "gNBDUId": "8",
+            "gNBId": "1193054",
+            "gNBDUName": "S8",
+            "gNBIdLength": "24",
+            "peeParametersList": [
+              {
+                "idx": "0",
+                "siteIdentification": "S8",
+                "siteLatitude": "0.0",
+                "siteLongitude": "0.0",
+                "siteAltitude": "20.8"
+              }
+            ],
+            "status": "Assigned"
+          }
+        },
+        {
+          "id": "9",
+          "attributes": {
+            "gNBDUId": "9",
+            "gNBId": "1193055",
+            "gNBDUName": "S9",
+            "gNBIdLength": "24",
+            "peeParametersList": [
+              {
+                "idx": "0",
+                "siteIdentification": "S9",
+                "siteLatitude": "0.0",
+                "siteLongitude": "0.0",
+                "siteAltitude": "20.9"
+              }
+            ],
+            "status": "Assigned"
+          }
+        },
+        {
+          "id": "10",
+          "attributes": {
+            "gNBDUId": "10",
+            "gNBId": "1193056",
+            "gNBDUName": "S10",
+            "gNBIdLength": "24",
+            "peeParametersList": [
+              {
+                "idx": "0",
+                "siteIdentification": "S10",
+                "siteLatitude": "0.0",
+                "siteLongitude": "0.0",
+                "siteAltitude": "21.0"
+              }
+            ],
+            "status": "Assigned"
+          }
+        },
+        {
+          "id": "11",
+          "attributes": {
+            "gNBDUId": "11",
+            "gNBId": "1193057",
+            "gNBDUName": "S11",
+            "gNBIdLength": "24",
+            "peeParametersList": [
+              {
+                "idx": "0",
+                "siteIdentification": "S11",
+                "siteLatitude": "0.0",
+                "siteLongitude": "0.0",
+                "siteAltitude": "21.1"
+              }
+            ],
+            "status": "Assigned"
+          }
+        },
+        {
+          "id": "12",
+          "attributes": {
+            "gNBDUId": "12",
+            "gNBId": "1193058",
+            "gNBDUName": "S12",
+            "gNBIdLength": "24",
+            "peeParametersList": [
+              {
+                "idx": "0",
+                "siteIdentification": "S12",
+                "siteLatitude": "0.0",
+                "siteLongitude": "0.0",
+                "siteAltitude": "21.2"
+              }
+            ],
+            "status": "Assigned"
+          }
+        },
+        {
+          "id": "13",
+          "attributes": {
+            "gNBDUId": "13",
+            "gNBId": "1193059",
+            "gNBDUName": "S13",
+            "gNBIdLength": "24",
+            "peeParametersList": [
+              {
+                "idx": "0",
+                "siteIdentification": "S13",
+                "siteLatitude": "0.0",
+                "siteLongitude": "0.0",
+                "siteAltitude": "21.3"
+              }
+            ],
+            "status": "Assigned"
+          }
+        },
+        {
+          "id": "14",
+          "attributes": {
+            "gNBDUId": "14",
+            "gNBId": "1193060",
+            "gNBDUName": "S14",
+            "gNBIdLength": "24",
+            "peeParametersList": [
+              {
+                "idx": "0",
+                "siteIdentification": "S14",
+                "siteLatitude": "0.0",
+                "siteLongitude": "0.0",
+                "siteAltitude": "21.4"
+              }
+            ],
+            "status": "Assigned"
+          }
+        },
+        {
+          "id": "15",
+          "attributes": {
+            "gNBDUId": "15",
+            "gNBId": "1193061",
+            "gNBDUName": "S15",
+            "gNBIdLength": "24",
+            "peeParametersList": [
+              {
+                "idx": "0",
+                "siteIdentification": "S15",
+                "siteLatitude": "0.0",
+                "siteLongitude": "0.0",
+                "siteAltitude": "21.5"
+              }
+            ],
+            "status": "Assigned"
+          }
+        },
+        {
+          "id": "16",
+          "attributes": {
+            "gNBDUId": "16",
+            "gNBId": "1193062",
+            "gNBDUName": "S16",
+            "gNBIdLength": "24",
+            "peeParametersList": [
+              {
+                "idx": "0",
+                "siteIdentification": "S16",
+                "siteLatitude": "0.0",
+                "siteLongitude": "0.0",
+                "siteAltitude": "21.6"
+              }
+            ],
+            "status": "Assigned"
+          }
+        },
+        {
+          "id": "17",
+          "attributes": {
+            "gNBDUId": "17",
+            "gNBId": "1193063",
+            "gNBDUName": "S17",
+            "gNBIdLength": "24",
+            "peeParametersList": [
+              {
+                "idx": "0",
+                "siteIdentification": "S17",
+                "siteLatitude": "0.0",
+                "siteLongitude": "0.0",
+                "siteAltitude": "21.7"
+              }
+            ],
+            "status": "Assigned"
+          }
+        },
+        {
+          "id": "18",
+          "attributes": {
+            "gNBDUId": "18",
+            "gNBId": "1193064",
+            "gNBDUName": "S18",
+            "gNBIdLength": "24",
+            "peeParametersList": [
+              {
+                "idx": "0",
+                "siteIdentification": "S18",
+                "siteLatitude": "0.0",
+                "siteLongitude": "0.0",
+                "siteAltitude": "21.8"
+              }
+            ],
+            "status": "Assigned"
+          }
+        },
+        {
+          "id": "19",
+          "attributes": {
+            "gNBDUId": "19",
+            "gNBId": "1193065",
+            "gNBDUName": "S19",
+            "gNBIdLength": "24",
+            "peeParametersList": [
+              {
+                "idx": "0",
+                "siteIdentification": "S19",
+                "siteLatitude": "0.0",
+                "siteLongitude": "0.0",
+                "siteAltitude": "21.9"
+              }
+            ],
+            "status": "Assigned"
+          }
+        },
+        {
+          "id": "20",
+          "attributes": {
+            "gNBDUId": "20",
+            "gNBId": "1193066",
+            "gNBDUName": "S20",
+            "gNBIdLength": "24",
+            "peeParametersList": [
+              {
+                "idx": "0",
+                "siteIdentification": "S20",
+                "siteLatitude": "0.0",
+                "siteLongitude": "0.0",
+                "siteAltitude": "22.0"
+              }
+            ],
+            "status": "Assigned"
+          }
+        },
+        {
+          "id": "21",
+          "attributes": {
+            "gNBDUId": "21",
+            "gNBId": "1193067",
+            "gNBDUName": "S21",
+            "gNBIdLength": "24",
+            "peeParametersList": [
+              {
+                "idx": "0",
+                "siteIdentification": "S21",
+                "siteLatitude": "0.0",
+                "siteLongitude": "0.0",
+                "siteAltitude": "22.1"
+              }
+            ],
+            "status": "Assigned"
+          }
+        },
+        {
+          "id": "22",
+          "attributes": {
+            "gNBDUId": "22",
+            "gNBId": "1193068",
+            "gNBDUName": "S22",
+            "gNBIdLength": "24",
+            "peeParametersList": [
+              {
+                "idx": "0",
+                "siteIdentification": "S22",
+                "siteLatitude": "0.0",
+                "siteLongitude": "0.0",
+                "siteAltitude": "22.2"
+              }
+            ],
+            "status": "Assigned"
+          }
+        },
+        {
+          "id": "23",
+          "attributes": {
+            "gNBDUId": "23",
+            "gNBId": "1193069",
+            "gNBDUName": "S23",
+            "gNBIdLength": "24",
+            "peeParametersList": [
+              {
+                "idx": "0",
+                "siteIdentification": "S23",
+                "siteLatitude": "0.0",
+                "siteLongitude": "0.0",
+                "siteAltitude": "22.3"
+              }
+            ],
+            "status": "Assigned"
+          }
+        },
+        {
+          "id": "24",
+          "attributes": {
+            "gNBDUId": "24",
+            "gNBId": "1193070",
+            "gNBDUName": "S24",
+            "gNBIdLength": "24",
+            "peeParametersList": [
+              {
+                "idx": "0",
+                "siteIdentification": "S24",
+                "siteLatitude": "0.0",
+                "siteLongitude": "0.0",
+                "siteAltitude": "22.4"
+              }
+            ],
+            "status": "Assigned"
+          }
+        },
+        {
+          "id": "25",
+          "attributes": {
+            "gNBDUId": "25",
+            "gNBId": "1193071",
+            "gNBDUName": "S25",
+            "gNBIdLength": "24",
+            "peeParametersList": [
+              {
+                "idx": "0",
+                "siteIdentification": "S25",
+                "siteLatitude": "0.0",
+                "siteLongitude": "0.0",
+                "siteAltitude": "22.5"
+              }
+            ],
+            "status": "Assigned"
+          }
+        },
+        {
+          "id": "26",
+          "attributes": {
+            "gNBDUId": "26",
+            "gNBId": "1193072",
+            "gNBDUName": "S26",
+            "gNBIdLength": "24",
+            "peeParametersList": [
+              {
+                "idx": "0",
+                "siteIdentification": "S26",
+                "siteLatitude": "0.0",
+                "siteLongitude": "0.0",
+                "siteAltitude": "22.6"
+              }
+            ],
+            "status": "Assigned"
+          }
+        },
+        {
+          "id": "27",
+          "attributes": {
+            "gNBDUId": "27",
+            "gNBId": "1193073",
+            "gNBDUName": "S27",
+            "gNBIdLength": "24",
+            "peeParametersList": [
+              {
+                "idx": "0",
+                "siteIdentification": "S27",
+                "siteLatitude": "0.0",
+                "siteLongitude": "0.0",
+                "siteAltitude": "22.7"
+              }
+            ],
+            "status": "Assigned"
+          }
+        },
+        {
+          "id": "28",
+          "attributes": {
+            "gNBDUId": "28",
+            "gNBId": "1193074",
+            "gNBDUName": "S28",
+            "gNBIdLength": "24",
+            "peeParametersList": [
+              {
+                "idx": "0",
+                "siteIdentification": "S28",
+                "siteLatitude": "0.0",
+                "siteLongitude": "0.0",
+                "siteAltitude": "22.8"
+              }
+            ],
+            "status": "Assigned"
+          }
+        },
+        {
+          "id": "29",
+          "attributes": {
+            "gNBDUId": "29",
+            "gNBId": "1193075",
+            "gNBDUName": "S29",
+            "gNBIdLength": "24",
+            "peeParametersList": [
+              {
+                "idx": "0",
+                "siteIdentification": "S29",
+                "siteLatitude": "0.0",
+                "siteLongitude": "0.0",
+                "siteAltitude": "22.9"
+              }
+            ],
+            "status": "Assigned"
+          }
+        },
+        {
+          "id": "30",
+          "attributes": {
+            "gNBDUId": "30",
+            "gNBId": "1193076",
+            "gNBDUName": "S30",
+            "gNBIdLength": "24",
+            "peeParametersList": [
+              {
+                "idx": "0",
+                "siteIdentification": "S30",
+                "siteLatitude": "0.0",
+                "siteLongitude": "0.0",
+                "siteAltitude": "23.0"
+              }
+            ],
+            "status": "Assigned"
+          }
+        },
+        {
+          "id": "31",
+          "attributes": {
+            "gNBDUId": "31",
+            "gNBId": "1193077",
+            "gNBDUName": "S31",
+            "gNBIdLength": "24",
+            "peeParametersList": [
+              {
+                "idx": "0",
+                "siteIdentification": "S31",
+                "siteLatitude": "0.0",
+                "siteLongitude": "0.0",
+                "siteAltitude": "23.1"
+              }
+            ],
+            "status": "Assigned"
+          }
+        },
+        {
+          "id": "32",
+          "attributes": {
+            "gNBDUId": "32",
+            "gNBId": "1193078",
+            "gNBDUName": "S32",
+            "gNBIdLength": "24",
+            "peeParametersList": [
+              {
+                "idx": "0",
+                "siteIdentification": "S32",
+                "siteLatitude": "0.0",
+                "siteLongitude": "0.0",
+                "siteAltitude": "23.2"
+              }
+            ],
+            "status": "Assigned"
+          }
+        },
+        {
+          "id": "33",
+          "attributes": {
+            "gNBDUId": "33",
+            "gNBId": "1193079",
+            "gNBDUName": "S33",
+            "gNBIdLength": "24",
+            "peeParametersList": [
+              {
+                "idx": "0",
+                "siteIdentification": "S33",
+                "siteLatitude": "0.0",
+                "siteLongitude": "0.0",
+                "siteAltitude": "23.3"
+              }
+            ],
+            "status": "Assigned"
+          }
+        },
+        {
+          "id": "34",
+          "attributes": {
+            "gNBDUId": "34",
+            "gNBId": "1193080",
+            "gNBDUName": "S34",
+            "gNBIdLength": "24",
+            "peeParametersList": [
+              {
+                "idx": "0",
+                "siteIdentification": "S34",
+                "siteLatitude": "0.0",
+                "siteLongitude": "0.0",
+                "siteAltitude": "23.4"
+              }
+            ],
+            "status": "Assigned"
+          }
+        },
+        {
+          "id": "35",
+          "attributes": {
+            "gNBDUId": "35",
+            "gNBId": "1193081",
+            "gNBDUName": "S35",
+            "gNBIdLength": "24",
+            "peeParametersList": [
+              {
+                "idx": "0",
+                "siteIdentification": "S35",
+                "siteLatitude": "0.0",
+                "siteLongitude": "0.0",
+                "siteAltitude": "23.5"
+              }
+            ],
+            "status": "Assigned"
+          }
+        },
+        {
+          "id": "36",
+          "attributes": {
+            "gNBDUId": "36",
+            "gNBId": "1193082",
+            "gNBDUName": "S36",
+            "gNBIdLength": "24",
+            "peeParametersList": [
+              {
+                "idx": "0",
+                "siteIdentification": "S36",
+                "siteLatitude": "0.0",
+                "siteLongitude": "0.0",
+                "siteAltitude": "23.6"
+              }
+            ],
+            "status": "Assigned"
+          }
+        },
+        {
+          "id": "37",
+          "attributes": {
+            "gNBDUId": "37",
+            "gNBId": "1193083",
+            "gNBDUName": "S37",
+            "gNBIdLength": "24",
+            "peeParametersList": [
+              {
+                "idx": "0",
+                "siteIdentification": "S37",
+                "siteLatitude": "0.0",
+                "siteLongitude": "0.0",
+                "siteAltitude": "23.7"
+              }
+            ],
+            "status": "Assigned"
+          }
+        },
+        {
+          "id": "38",
+          "attributes": {
+            "gNBDUId": "38",
+            "gNBId": "1193084",
+            "gNBDUName": "S38",
+            "gNBIdLength": "24",
+            "peeParametersList": [
+              {
+                "idx": "0",
+                "siteIdentification": "S38",
+                "siteLatitude": "0.0",
+                "siteLongitude": "0.0",
+                "siteAltitude": "23.8"
+              }
+            ],
+            "status": "Assigned"
+          }
+        },
+        {
+          "id": "39",
+          "attributes": {
+            "gNBDUId": "39",
+            "gNBId": "1193085",
+            "gNBDUName": "S39",
+            "gNBIdLength": "24",
+            "peeParametersList": [
+              {
+                "idx": "0",
+                "siteIdentification": "S39",
+                "siteLatitude": "0.0",
+                "siteLongitude": "0.0",
+                "siteAltitude": "23.9"
+              }
+            ],
+            "status": "Assigned"
+          }
+        },
+        {
+          "id": "40",
+          "attributes": {
+            "gNBDUId": "40",
+            "gNBId": "1193086",
+            "gNBDUName": "S40",
+            "gNBIdLength": "24",
+            "peeParametersList": [
+              {
+                "idx": "0",
+                "siteIdentification": "S40",
+                "siteLatitude": "0.0",
+                "siteLongitude": "0.0",
+                "siteAltitude": "24.0"
+              }
+            ],
+            "status": "Assigned"
+          }
+        },
+        {
+          "id": "41",
+          "attributes": {
+            "gNBDUId": "41",
+            "gNBId": "1193087",
+            "gNBDUName": "S41",
+            "gNBIdLength": "24",
+            "peeParametersList": [
+              {
+                "idx": "0",
+                "siteIdentification": "S41",
+                "siteLatitude": "0.0",
+                "siteLongitude": "0.0",
+                "siteAltitude": "24.1"
+              }
+            ],
+            "status": "Assigned"
+          }
+        },
+        {
+          "id": "42",
+          "attributes": {
+            "gNBDUId": "42",
+            "gNBId": "1193088",
+            "gNBDUName": "S42",
+            "gNBIdLength": "24",
+            "peeParametersList": [
+              {
+                "idx": "0",
+                "siteIdentification": "S42",
+                "siteLatitude": "0.0",
+                "siteLongitude": "0.0",
+                "siteAltitude": "24.2"
+              }
+            ],
+            "status": "Assigned"
+          }
+        },
+        {
+          "id": "43",
+          "attributes": {
+            "gNBDUId": "43",
+            "gNBId": "1193089",
+            "gNBDUName": "S43",
+            "gNBIdLength": "24",
+            "peeParametersList": [
+              {
+                "idx": "0",
+                "siteIdentification": "S43",
+                "siteLatitude": "0.0",
+                "siteLongitude": "0.0",
+                "siteAltitude": "24.3"
+              }
+            ],
+            "status": "Assigned"
+          }
+        },
+        {
+          "id": "44",
+          "attributes": {
+            "gNBDUId": "44",
+            "gNBId": "1193090",
+            "gNBDUName": "S44",
+            "gNBIdLength": "24",
+            "peeParametersList": [
+              {
+                "idx": "0",
+                "siteIdentification": "S44",
+                "siteLatitude": "0.0",
+                "siteLongitude": "0.0",
+                "siteAltitude": "24.4"
+              }
+            ],
+            "status": "Assigned"
+          }
+        },
+        {
+          "id": "45",
+          "attributes": {
+            "gNBDUId": "45",
+            "gNBId": "1193091",
+            "gNBDUName": "S45",
+            "gNBIdLength": "24",
+            "peeParametersList": [
+              {
+                "idx": "0",
+                "siteIdentification": "S45",
+                "siteLatitude": "0.0",
+                "siteLongitude": "0.0",
+                "siteAltitude": "24.5"
+              }
+            ],
+            "status": "Assigned"
+          }
+        },
+        {
+          "id": "46",
+          "attributes": {
+            "gNBDUId": "46",
+            "gNBId": "1193092",
+            "gNBDUName": "S46",
+            "gNBIdLength": "24",
+            "peeParametersList": [
+              {
+                "idx": "0",
+                "siteIdentification": "S46",
+                "siteLatitude": "0.0",
+                "siteLongitude": "0.0",
+                "siteAltitude": "24.6"
+              }
+            ],
+            "status": "Assigned"
+          }
+        },
+        {
+          "id": "47",
+          "attributes": {
+            "gNBDUId": "47",
+            "gNBId": "1193093",
+            "gNBDUName": "S47",
+            "gNBIdLength": "24",
+            "peeParametersList": [
+              {
+                "idx": "0",
+                "siteIdentification": "S47",
+                "siteLatitude": "0.0",
+                "siteLongitude": "0.0",
+                "siteAltitude": "24.7"
+              }
+            ],
+            "status": "Assigned"
+          }
+        },
+        {
+          "id": "48",
+          "attributes": {
+            "gNBDUId": "48",
+            "gNBId": "1193094",
+            "gNBDUName": "S48",
+            "gNBIdLength": "24",
+            "peeParametersList": [
+              {
+                "idx": "0",
+                "siteIdentification": "S48",
+                "siteLatitude": "0.0",
+                "siteLongitude": "0.0",
+                "siteAltitude": "24.8"
+              }
+            ],
+            "status": "Assigned"
+          }
+        },
+        {
+          "id": "49",
+          "attributes": {
+            "gNBDUId": "49",
+            "gNBId": "1193095",
+            "gNBDUName": "S49",
+            "gNBIdLength": "24",
+            "peeParametersList": [
+              {
+                "idx": "0",
+                "siteIdentification": "S49",
+                "siteLatitude": "0.0",
+                "siteLongitude": "0.0",
+                "siteAltitude": "24.9"
+              }
+            ],
+            "status": "Assigned"
+          }
+        },
+        {
+          "id": "50",
+          "attributes": {
+            "gNBDUId": "50",
+            "gNBId": "1193096",
+            "gNBDUName": "S50",
+            "gNBIdLength": "24",
+            "peeParametersList": [
+              {
+                "idx": "0",
+                "siteIdentification": "S50",
+                "siteLatitude": "0.0",
+                "siteLongitude": "0.0",
+                "siteAltitude": "25.0"
+              }
+            ],
+            "status": "Assigned"
+          }
+        },
+        {
+          "id": "51",
+          "attributes": {
+            "gNBDUId": "51",
+            "gNBId": "1193097",
+            "gNBDUName": "S51",
+            "gNBIdLength": "24",
+            "peeParametersList": [
+              {
+                "idx": "0",
+                "siteIdentification": "S51",
+                "siteLatitude": "0.0",
+                "siteLongitude": "0.0",
+                "siteAltitude": "25.1"
+              }
+            ],
+            "status": "Assigned"
+          }
+        },
+        {
+          "id": "52",
+          "attributes": {
+            "gNBDUId": "52",
+            "gNBId": "1193098",
+            "gNBDUName": "S52",
+            "gNBIdLength": "24",
+            "peeParametersList": [
+              {
+                "idx": "0",
+                "siteIdentification": "S52",
+                "siteLatitude": "0.0",
+                "siteLongitude": "0.0",
+                "siteAltitude": "25.2"
+              }
+            ],
+            "status": "Assigned"
+          }
+        }
+      ],
+      "o-ran-smo-teiv-ran:NRCellDU": [
+        {
+          "id": "1",
+          "attributes": {
+            "priorityLabel": "326812556",
+            "cellLocalId": "1",
+            "administrativeState": "UNLOCKED",
+            "pLMNInfoList": [
+              {
+                "mcc": "001",
+                "mnc": "01",
+                "sd": "FFFFFF",
+                "sst": "128"
+              }
+            ],
+            "nRPCI": "4",
+            "nRTAC": "5179162",
+            "arfcnDL": "713333",
+            "arfcnUL": "713333",
+            "arfcnSUL": "466534982",
+            "bSChannelBwDL": "5",
+            "ssbFrequency": "4700",
+            "ssbPeriodicity": "80",
+            "ssbSubCarrierSpacing": "120",
+            "ssbOffset": "31",
+            "ssbDuration": "1",
+            "bSChannelBwUL": "5",
+            "bSChannelBwSUL": "15",
+            "peeParametersList": [
+              {
+                "idx": "0",
+                "siteIdentification": "S1",
+                "siteLatitude": "0.0",
+                "siteLongitude": "0.0",
+                "siteAltitude": "20.1"
+              }
+            ],
+            "status": "Assigned"
+          }
+        },
+        {
+          "id": "2",
+          "attributes": {
+            "priorityLabel": "326812556",
+            "cellLocalId": "2",
+            "administrativeState": "UNLOCKED",
+            "pLMNInfoList": [
+              {
+                "mcc": "001",
+                "mnc": "01",
+                "sd": "FFFFFF",
+                "sst": "128"
+              }
+            ],
+            "nRPCI": "4",
+            "nRTAC": "5179162",
+            "arfcnDL": "713333",
+            "arfcnUL": "713333",
+            "arfcnSUL": "466534982",
+            "bSChannelBwDL": "5",
+            "ssbFrequency": "4700",
+            "ssbPeriodicity": "80",
+            "ssbSubCarrierSpacing": "120",
+            "ssbOffset": "31",
+            "ssbDuration": "1",
+            "bSChannelBwUL": "5",
+            "bSChannelBwSUL": "15",
+            "peeParametersList": [
+              {
+                "idx": "0",
+                "siteIdentification": "S2",
+                "siteLatitude": "0.0",
+                "siteLongitude": "0.0",
+                "siteAltitude": "20.2"
+              }
+            ],
+            "status": "Assigned"
+          }
+        },
+        {
+          "id": "3",
+          "attributes": {
+            "priorityLabel": "326812556",
+            "cellLocalId": "3",
+            "administrativeState": "UNLOCKED",
+            "pLMNInfoList": [
+              {
+                "mcc": "001",
+                "mnc": "01",
+                "sd": "FFFFFF",
+                "sst": "128"
+              }
+            ],
+            "nRPCI": "4",
+            "nRTAC": "5179162",
+            "arfcnDL": "713333",
+            "arfcnUL": "713333",
+            "arfcnSUL": "466534982",
+            "bSChannelBwDL": "5",
+            "ssbFrequency": "4700",
+            "ssbPeriodicity": "80",
+            "ssbSubCarrierSpacing": "120",
+            "ssbOffset": "31",
+            "ssbDuration": "1",
+            "bSChannelBwUL": "5",
+            "bSChannelBwSUL": "15",
+            "peeParametersList": [
+              {
+                "idx": "0",
+                "siteIdentification": "S3",
+                "siteLatitude": "0.0",
+                "siteLongitude": "0.0",
+                "siteAltitude": "20.3"
+              }
+            ],
+            "status": "Assigned"
+          }
+        },
+        {
+          "id": "4",
+          "attributes": {
+            "priorityLabel": "326812556",
+            "cellLocalId": "4",
+            "administrativeState": "UNLOCKED",
+            "pLMNInfoList": [
+              {
+                "mcc": "001",
+                "mnc": "01",
+                "sd": "FFFFFF",
+                "sst": "128"
+              }
+            ],
+            "nRPCI": "4",
+            "nRTAC": "5179162",
+            "arfcnDL": "713333",
+            "arfcnUL": "713333",
+            "arfcnSUL": "466534982",
+            "bSChannelBwDL": "5",
+            "ssbFrequency": "4700",
+            "ssbPeriodicity": "80",
+            "ssbSubCarrierSpacing": "120",
+            "ssbOffset": "31",
+            "ssbDuration": "1",
+            "bSChannelBwUL": "5",
+            "bSChannelBwSUL": "15",
+            "peeParametersList": [
+              {
+                "idx": "0",
+                "siteIdentification": "S4",
+                "siteLatitude": "0.0",
+                "siteLongitude": "0.0",
+                "siteAltitude": "20.4"
+              }
+            ],
+            "status": "Assigned"
+          }
+        },
+        {
+          "id": "5",
+          "attributes": {
+            "priorityLabel": "326812556",
+            "cellLocalId": "5",
+            "administrativeState": "UNLOCKED",
+            "pLMNInfoList": [
+              {
+                "mcc": "001",
+                "mnc": "01",
+                "sd": "FFFFFF",
+                "sst": "128"
+              }
+            ],
+            "nRPCI": "4",
+            "nRTAC": "5179162",
+            "arfcnDL": "713333",
+            "arfcnUL": "713333",
+            "arfcnSUL": "466534982",
+            "bSChannelBwDL": "5",
+            "ssbFrequency": "4700",
+            "ssbPeriodicity": "80",
+            "ssbSubCarrierSpacing": "120",
+            "ssbOffset": "31",
+            "ssbDuration": "1",
+            "bSChannelBwUL": "5",
+            "bSChannelBwSUL": "15",
+            "peeParametersList": [
+              {
+                "idx": "0",
+                "siteIdentification": "S5",
+                "siteLatitude": "0.0",
+                "siteLongitude": "0.0",
+                "siteAltitude": "20.5"
+              }
+            ],
+            "status": "Assigned"
+          }
+        },
+        {
+          "id": "6",
+          "attributes": {
+            "priorityLabel": "326812556",
+            "cellLocalId": "6",
+            "administrativeState": "UNLOCKED",
+            "pLMNInfoList": [
+              {
+                "mcc": "001",
+                "mnc": "01",
+                "sd": "FFFFFF",
+                "sst": "128"
+              }
+            ],
+            "nRPCI": "4",
+            "nRTAC": "5179162",
+            "arfcnDL": "713333",
+            "arfcnUL": "713333",
+            "arfcnSUL": "466534982",
+            "bSChannelBwDL": "5",
+            "ssbFrequency": "4700",
+            "ssbPeriodicity": "80",
+            "ssbSubCarrierSpacing": "120",
+            "ssbOffset": "31",
+            "ssbDuration": "1",
+            "bSChannelBwUL": "5",
+            "bSChannelBwSUL": "15",
+            "peeParametersList": [
+              {
+                "idx": "0",
+                "siteIdentification": "S6",
+                "siteLatitude": "0.0",
+                "siteLongitude": "0.0",
+                "siteAltitude": "20.6"
+              }
+            ],
+            "status": "Assigned"
+          }
+        },
+        {
+          "id": "7",
+          "attributes": {
+            "priorityLabel": "326812556",
+            "cellLocalId": "7",
+            "administrativeState": "UNLOCKED",
+            "pLMNInfoList": [
+              {
+                "mcc": "001",
+                "mnc": "01",
+                "sd": "FFFFFF",
+                "sst": "128"
+              }
+            ],
+            "nRPCI": "4",
+            "nRTAC": "5179162",
+            "arfcnDL": "713333",
+            "arfcnUL": "713333",
+            "arfcnSUL": "466534982",
+            "bSChannelBwDL": "5",
+            "ssbFrequency": "4700",
+            "ssbPeriodicity": "80",
+            "ssbSubCarrierSpacing": "120",
+            "ssbOffset": "31",
+            "ssbDuration": "1",
+            "bSChannelBwUL": "5",
+            "bSChannelBwSUL": "15",
+            "peeParametersList": [
+              {
+                "idx": "0",
+                "siteIdentification": "S7",
+                "siteLatitude": "0.0",
+                "siteLongitude": "0.0",
+                "siteAltitude": "20.7"
+              }
+            ],
+            "status": "Assigned"
+          }
+        },
+        {
+          "id": "8",
+          "attributes": {
+            "priorityLabel": "326812556",
+            "cellLocalId": "8",
+            "administrativeState": "UNLOCKED",
+            "pLMNInfoList": [
+              {
+                "mcc": "001",
+                "mnc": "01",
+                "sd": "FFFFFF",
+                "sst": "128"
+              }
+            ],
+            "nRPCI": "4",
+            "nRTAC": "5179162",
+            "arfcnDL": "713333",
+            "arfcnUL": "713333",
+            "arfcnSUL": "466534982",
+            "bSChannelBwDL": "5",
+            "ssbFrequency": "4700",
+            "ssbPeriodicity": "80",
+            "ssbSubCarrierSpacing": "120",
+            "ssbOffset": "31",
+            "ssbDuration": "1",
+            "bSChannelBwUL": "5",
+            "bSChannelBwSUL": "15",
+            "peeParametersList": [
+              {
+                "idx": "0",
+                "siteIdentification": "S8",
+                "siteLatitude": "0.0",
+                "siteLongitude": "0.0",
+                "siteAltitude": "20.8"
+              }
+            ],
+            "status": "Assigned"
+          }
+        },
+        {
+          "id": "9",
+          "attributes": {
+            "priorityLabel": "326812556",
+            "cellLocalId": "9",
+            "administrativeState": "UNLOCKED",
+            "pLMNInfoList": [
+              {
+                "mcc": "001",
+                "mnc": "01",
+                "sd": "FFFFFF",
+                "sst": "128"
+              }
+            ],
+            "nRPCI": "4",
+            "nRTAC": "5179162",
+            "arfcnDL": "713333",
+            "arfcnUL": "713333",
+            "arfcnSUL": "466534982",
+            "bSChannelBwDL": "5",
+            "ssbFrequency": "4700",
+            "ssbPeriodicity": "80",
+            "ssbSubCarrierSpacing": "120",
+            "ssbOffset": "31",
+            "ssbDuration": "1",
+            "bSChannelBwUL": "5",
+            "bSChannelBwSUL": "15",
+            "peeParametersList": [
+              {
+                "idx": "0",
+                "siteIdentification": "S9",
+                "siteLatitude": "0.0",
+                "siteLongitude": "0.0",
+                "siteAltitude": "20.9"
+              }
+            ],
+            "status": "Assigned"
+          }
+        },
+        {
+          "id": "10",
+          "attributes": {
+            "priorityLabel": "326812556",
+            "cellLocalId": "10",
+            "administrativeState": "UNLOCKED",
+            "pLMNInfoList": [
+              {
+                "mcc": "001",
+                "mnc": "01",
+                "sd": "FFFFFF",
+                "sst": "128"
+              }
+            ],
+            "nRPCI": "4",
+            "nRTAC": "5179162",
+            "arfcnDL": "713333",
+            "arfcnUL": "713333",
+            "arfcnSUL": "466534982",
+            "bSChannelBwDL": "5",
+            "ssbFrequency": "4700",
+            "ssbPeriodicity": "80",
+            "ssbSubCarrierSpacing": "120",
+            "ssbOffset": "31",
+            "ssbDuration": "1",
+            "bSChannelBwUL": "5",
+            "bSChannelBwSUL": "15",
+            "peeParametersList": [
+              {
+                "idx": "0",
+                "siteIdentification": "S10",
+                "siteLatitude": "0.0",
+                "siteLongitude": "0.0",
+                "siteAltitude": "21.0"
+              }
+            ],
+            "status": "Assigned"
+          }
+        },
+        {
+          "id": "11",
+          "attributes": {
+            "priorityLabel": "326812556",
+            "cellLocalId": "11",
+            "administrativeState": "UNLOCKED",
+            "pLMNInfoList": [
+              {
+                "mcc": "001",
+                "mnc": "01",
+                "sd": "FFFFFF",
+                "sst": "128"
+              }
+            ],
+            "nRPCI": "4",
+            "nRTAC": "5179162",
+            "arfcnDL": "713333",
+            "arfcnUL": "713333",
+            "arfcnSUL": "466534982",
+            "bSChannelBwDL": "5",
+            "ssbFrequency": "4700",
+            "ssbPeriodicity": "80",
+            "ssbSubCarrierSpacing": "120",
+            "ssbOffset": "31",
+            "ssbDuration": "1",
+            "bSChannelBwUL": "5",
+            "bSChannelBwSUL": "15",
+            "peeParametersList": [
+              {
+                "idx": "0",
+                "siteIdentification": "S11",
+                "siteLatitude": "0.0",
+                "siteLongitude": "0.0",
+                "siteAltitude": "21.1"
+              }
+            ],
+            "status": "Assigned"
+          }
+        },
+        {
+          "id": "12",
+          "attributes": {
+            "priorityLabel": "326812556",
+            "cellLocalId": "12",
+            "administrativeState": "UNLOCKED",
+            "pLMNInfoList": [
+              {
+                "mcc": "001",
+                "mnc": "01",
+                "sd": "FFFFFF",
+                "sst": "128"
+              }
+            ],
+            "nRPCI": "4",
+            "nRTAC": "5179162",
+            "arfcnDL": "713333",
+            "arfcnUL": "713333",
+            "arfcnSUL": "466534982",
+            "bSChannelBwDL": "5",
+            "ssbFrequency": "4700",
+            "ssbPeriodicity": "80",
+            "ssbSubCarrierSpacing": "120",
+            "ssbOffset": "31",
+            "ssbDuration": "1",
+            "bSChannelBwUL": "5",
+            "bSChannelBwSUL": "15",
+            "peeParametersList": [
+              {
+                "idx": "0",
+                "siteIdentification": "S12",
+                "siteLatitude": "0.0",
+                "siteLongitude": "0.0",
+                "siteAltitude": "21.2"
+              }
+            ],
+            "status": "Assigned"
+          }
+        },
+        {
+          "id": "13",
+          "attributes": {
+            "priorityLabel": "326812556",
+            "cellLocalId": "13",
+            "administrativeState": "UNLOCKED",
+            "pLMNInfoList": [
+              {
+                "mcc": "001",
+                "mnc": "01",
+                "sd": "FFFFFF",
+                "sst": "128"
+              }
+            ],
+            "nRPCI": "4",
+            "nRTAC": "5179162",
+            "arfcnDL": "713333",
+            "arfcnUL": "713333",
+            "arfcnSUL": "466534982",
+            "bSChannelBwDL": "5",
+            "ssbFrequency": "4700",
+            "ssbPeriodicity": "80",
+            "ssbSubCarrierSpacing": "120",
+            "ssbOffset": "31",
+            "ssbDuration": "1",
+            "bSChannelBwUL": "5",
+            "bSChannelBwSUL": "15",
+            "peeParametersList": [
+              {
+                "idx": "0",
+                "siteIdentification": "S13",
+                "siteLatitude": "0.0",
+                "siteLongitude": "0.0",
+                "siteAltitude": "21.3"
+              }
+            ],
+            "status": "Assigned"
+          }
+        },
+        {
+          "id": "14",
+          "attributes": {
+            "priorityLabel": "326812556",
+            "cellLocalId": "14",
+            "administrativeState": "UNLOCKED",
+            "pLMNInfoList": [
+              {
+                "mcc": "001",
+                "mnc": "01",
+                "sd": "FFFFFF",
+                "sst": "128"
+              }
+            ],
+            "nRPCI": "4",
+            "nRTAC": "5179162",
+            "arfcnDL": "713333",
+            "arfcnUL": "713333",
+            "arfcnSUL": "466534982",
+            "bSChannelBwDL": "5",
+            "ssbFrequency": "4700",
+            "ssbPeriodicity": "80",
+            "ssbSubCarrierSpacing": "120",
+            "ssbOffset": "31",
+            "ssbDuration": "1",
+            "bSChannelBwUL": "5",
+            "bSChannelBwSUL": "15",
+            "peeParametersList": [
+              {
+                "idx": "0",
+                "siteIdentification": "S14",
+                "siteLatitude": "0.0",
+                "siteLongitude": "0.0",
+                "siteAltitude": "21.4"
+              }
+            ],
+            "status": "Assigned"
+          }
+        },
+        {
+          "id": "15",
+          "attributes": {
+            "priorityLabel": "326812556",
+            "cellLocalId": "15",
+            "administrativeState": "UNLOCKED",
+            "pLMNInfoList": [
+              {
+                "mcc": "001",
+                "mnc": "01",
+                "sd": "FFFFFF",
+                "sst": "128"
+              }
+            ],
+            "nRPCI": "4",
+            "nRTAC": "5179162",
+            "arfcnDL": "713333",
+            "arfcnUL": "713333",
+            "arfcnSUL": "466534982",
+            "bSChannelBwDL": "5",
+            "ssbFrequency": "4700",
+            "ssbPeriodicity": "80",
+            "ssbSubCarrierSpacing": "120",
+            "ssbOffset": "31",
+            "ssbDuration": "1",
+            "bSChannelBwUL": "5",
+            "bSChannelBwSUL": "15",
+            "peeParametersList": [
+              {
+                "idx": "0",
+                "siteIdentification": "S15",
+                "siteLatitude": "0.0",
+                "siteLongitude": "0.0",
+                "siteAltitude": "21.5"
+              }
+            ],
+            "status": "Assigned"
+          }
+        },
+        {
+          "id": "16",
+          "attributes": {
+            "priorityLabel": "326812556",
+            "cellLocalId": "16",
+            "administrativeState": "UNLOCKED",
+            "pLMNInfoList": [
+              {
+                "mcc": "001",
+                "mnc": "01",
+                "sd": "FFFFFF",
+                "sst": "128"
+              }
+            ],
+            "nRPCI": "4",
+            "nRTAC": "5179162",
+            "arfcnDL": "713333",
+            "arfcnUL": "713333",
+            "arfcnSUL": "466534982",
+            "bSChannelBwDL": "5",
+            "ssbFrequency": "4700",
+            "ssbPeriodicity": "80",
+            "ssbSubCarrierSpacing": "120",
+            "ssbOffset": "31",
+            "ssbDuration": "1",
+            "bSChannelBwUL": "5",
+            "bSChannelBwSUL": "15",
+            "peeParametersList": [
+              {
+                "idx": "0",
+                "siteIdentification": "S16",
+                "siteLatitude": "0.0",
+                "siteLongitude": "0.0",
+                "siteAltitude": "21.6"
+              }
+            ],
+            "status": "Assigned"
+          }
+        },
+        {
+          "id": "17",
+          "attributes": {
+            "priorityLabel": "326812556",
+            "cellLocalId": "17",
+            "administrativeState": "UNLOCKED",
+            "pLMNInfoList": [
+              {
+                "mcc": "001",
+                "mnc": "01",
+                "sd": "FFFFFF",
+                "sst": "128"
+              }
+            ],
+            "nRPCI": "4",
+            "nRTAC": "5179162",
+            "arfcnDL": "713333",
+            "arfcnUL": "713333",
+            "arfcnSUL": "466534982",
+            "bSChannelBwDL": "5",
+            "ssbFrequency": "4700",
+            "ssbPeriodicity": "80",
+            "ssbSubCarrierSpacing": "120",
+            "ssbOffset": "31",
+            "ssbDuration": "1",
+            "bSChannelBwUL": "5",
+            "bSChannelBwSUL": "15",
+            "peeParametersList": [
+              {
+                "idx": "0",
+                "siteIdentification": "S17",
+                "siteLatitude": "0.0",
+                "siteLongitude": "0.0",
+                "siteAltitude": "21.7"
+              }
+            ],
+            "status": "Assigned"
+          }
+        },
+        {
+          "id": "18",
+          "attributes": {
+            "priorityLabel": "326812556",
+            "cellLocalId": "18",
+            "administrativeState": "UNLOCKED",
+            "pLMNInfoList": [
+              {
+                "mcc": "001",
+                "mnc": "01",
+                "sd": "FFFFFF",
+                "sst": "128"
+              }
+            ],
+            "nRPCI": "4",
+            "nRTAC": "5179162",
+            "arfcnDL": "713333",
+            "arfcnUL": "713333",
+            "arfcnSUL": "466534982",
+            "bSChannelBwDL": "5",
+            "ssbFrequency": "4700",
+            "ssbPeriodicity": "80",
+            "ssbSubCarrierSpacing": "120",
+            "ssbOffset": "31",
+            "ssbDuration": "1",
+            "bSChannelBwUL": "5",
+            "bSChannelBwSUL": "15",
+            "peeParametersList": [
+              {
+                "idx": "0",
+                "siteIdentification": "S18",
+                "siteLatitude": "0.0",
+                "siteLongitude": "0.0",
+                "siteAltitude": "21.8"
+              }
+            ],
+            "status": "Assigned"
+          }
+        },
+        {
+          "id": "19",
+          "attributes": {
+            "priorityLabel": "326812556",
+            "cellLocalId": "19",
+            "administrativeState": "UNLOCKED",
+            "pLMNInfoList": [
+              {
+                "mcc": "001",
+                "mnc": "01",
+                "sd": "FFFFFF",
+                "sst": "128"
+              }
+            ],
+            "nRPCI": "4",
+            "nRTAC": "5179162",
+            "arfcnDL": "713333",
+            "arfcnUL": "713333",
+            "arfcnSUL": "466534982",
+            "bSChannelBwDL": "5",
+            "ssbFrequency": "4700",
+            "ssbPeriodicity": "80",
+            "ssbSubCarrierSpacing": "120",
+            "ssbOffset": "31",
+            "ssbDuration": "1",
+            "bSChannelBwUL": "5",
+            "bSChannelBwSUL": "15",
+            "peeParametersList": [
+              {
+                "idx": "0",
+                "siteIdentification": "S19",
+                "siteLatitude": "0.0",
+                "siteLongitude": "0.0",
+                "siteAltitude": "21.9"
+              }
+            ],
+            "status": "Assigned"
+          }
+        },
+        {
+          "id": "20",
+          "attributes": {
+            "priorityLabel": "326812556",
+            "cellLocalId": "20",
+            "administrativeState": "UNLOCKED",
+            "pLMNInfoList": [
+              {
+                "mcc": "001",
+                "mnc": "01",
+                "sd": "FFFFFF",
+                "sst": "128"
+              }
+            ],
+            "nRPCI": "4",
+            "nRTAC": "5179162",
+            "arfcnDL": "713333",
+            "arfcnUL": "713333",
+            "arfcnSUL": "466534982",
+            "bSChannelBwDL": "5",
+            "ssbFrequency": "4700",
+            "ssbPeriodicity": "80",
+            "ssbSubCarrierSpacing": "120",
+            "ssbOffset": "31",
+            "ssbDuration": "1",
+            "bSChannelBwUL": "5",
+            "bSChannelBwSUL": "15",
+            "peeParametersList": [
+              {
+                "idx": "0",
+                "siteIdentification": "S20",
+                "siteLatitude": "0.0",
+                "siteLongitude": "0.0",
+                "siteAltitude": "22.0"
+              }
+            ],
+            "status": "Assigned"
+          }
+        },
+        {
+          "id": "21",
+          "attributes": {
+            "priorityLabel": "326812556",
+            "cellLocalId": "21",
+            "administrativeState": "UNLOCKED",
+            "pLMNInfoList": [
+              {
+                "mcc": "001",
+                "mnc": "01",
+                "sd": "FFFFFF",
+                "sst": "128"
+              }
+            ],
+            "nRPCI": "4",
+            "nRTAC": "5179162",
+            "arfcnDL": "713333",
+            "arfcnUL": "713333",
+            "arfcnSUL": "466534982",
+            "bSChannelBwDL": "5",
+            "ssbFrequency": "4700",
+            "ssbPeriodicity": "80",
+            "ssbSubCarrierSpacing": "120",
+            "ssbOffset": "31",
+            "ssbDuration": "1",
+            "bSChannelBwUL": "5",
+            "bSChannelBwSUL": "15",
+            "peeParametersList": [
+              {
+                "idx": "0",
+                "siteIdentification": "S21",
+                "siteLatitude": "0.0",
+                "siteLongitude": "0.0",
+                "siteAltitude": "22.1"
+              }
+            ],
+            "status": "Assigned"
+          }
+        },
+        {
+          "id": "22",
+          "attributes": {
+            "priorityLabel": "326812556",
+            "cellLocalId": "22",
+            "administrativeState": "UNLOCKED",
+            "pLMNInfoList": [
+              {
+                "mcc": "001",
+                "mnc": "01",
+                "sd": "FFFFFF",
+                "sst": "128"
+              }
+            ],
+            "nRPCI": "4",
+            "nRTAC": "5179162",
+            "arfcnDL": "713333",
+            "arfcnUL": "713333",
+            "arfcnSUL": "466534982",
+            "bSChannelBwDL": "5",
+            "ssbFrequency": "4700",
+            "ssbPeriodicity": "80",
+            "ssbSubCarrierSpacing": "120",
+            "ssbOffset": "31",
+            "ssbDuration": "1",
+            "bSChannelBwUL": "5",
+            "bSChannelBwSUL": "15",
+            "peeParametersList": [
+              {
+                "idx": "0",
+                "siteIdentification": "S22",
+                "siteLatitude": "0.0",
+                "siteLongitude": "0.0",
+                "siteAltitude": "22.2"
+              }
+            ],
+            "status": "Assigned"
+          }
+        },
+        {
+          "id": "23",
+          "attributes": {
+            "priorityLabel": "326812556",
+            "cellLocalId": "23",
+            "administrativeState": "UNLOCKED",
+            "pLMNInfoList": [
+              {
+                "mcc": "001",
+                "mnc": "01",
+                "sd": "FFFFFF",
+                "sst": "128"
+              }
+            ],
+            "nRPCI": "4",
+            "nRTAC": "5179162",
+            "arfcnDL": "713333",
+            "arfcnUL": "713333",
+            "arfcnSUL": "466534982",
+            "bSChannelBwDL": "5",
+            "ssbFrequency": "4700",
+            "ssbPeriodicity": "80",
+            "ssbSubCarrierSpacing": "120",
+            "ssbOffset": "31",
+            "ssbDuration": "1",
+            "bSChannelBwUL": "5",
+            "bSChannelBwSUL": "15",
+            "peeParametersList": [
+              {
+                "idx": "0",
+                "siteIdentification": "S23",
+                "siteLatitude": "0.0",
+                "siteLongitude": "0.0",
+                "siteAltitude": "22.3"
+              }
+            ],
+            "status": "Assigned"
+          }
+        },
+        {
+          "id": "24",
+          "attributes": {
+            "priorityLabel": "326812556",
+            "cellLocalId": "24",
+            "administrativeState": "UNLOCKED",
+            "pLMNInfoList": [
+              {
+                "mcc": "001",
+                "mnc": "01",
+                "sd": "FFFFFF",
+                "sst": "128"
+              }
+            ],
+            "nRPCI": "4",
+            "nRTAC": "5179162",
+            "arfcnDL": "713333",
+            "arfcnUL": "713333",
+            "arfcnSUL": "466534982",
+            "bSChannelBwDL": "5",
+            "ssbFrequency": "4700",
+            "ssbPeriodicity": "80",
+            "ssbSubCarrierSpacing": "120",
+            "ssbOffset": "31",
+            "ssbDuration": "1",
+            "bSChannelBwUL": "5",
+            "bSChannelBwSUL": "15",
+            "peeParametersList": [
+              {
+                "idx": "0",
+                "siteIdentification": "S24",
+                "siteLatitude": "0.0",
+                "siteLongitude": "0.0",
+                "siteAltitude": "22.4"
+              }
+            ],
+            "status": "Assigned"
+          }
+        },
+        {
+          "id": "25",
+          "attributes": {
+            "priorityLabel": "326812556",
+            "cellLocalId": "25",
+            "administrativeState": "UNLOCKED",
+            "pLMNInfoList": [
+              {
+                "mcc": "001",
+                "mnc": "01",
+                "sd": "FFFFFF",
+                "sst": "128"
+              }
+            ],
+            "nRPCI": "4",
+            "nRTAC": "5179162",
+            "arfcnDL": "713333",
+            "arfcnUL": "713333",
+            "arfcnSUL": "466534982",
+            "bSChannelBwDL": "5",
+            "ssbFrequency": "4700",
+            "ssbPeriodicity": "80",
+            "ssbSubCarrierSpacing": "120",
+            "ssbOffset": "31",
+            "ssbDuration": "1",
+            "bSChannelBwUL": "5",
+            "bSChannelBwSUL": "15",
+            "peeParametersList": [
+              {
+                "idx": "0",
+                "siteIdentification": "S25",
+                "siteLatitude": "0.0",
+                "siteLongitude": "0.0",
+                "siteAltitude": "22.5"
+              }
+            ],
+            "status": "Assigned"
+          }
+        },
+        {
+          "id": "26",
+          "attributes": {
+            "priorityLabel": "326812556",
+            "cellLocalId": "26",
+            "administrativeState": "UNLOCKED",
+            "pLMNInfoList": [
+              {
+                "mcc": "001",
+                "mnc": "01",
+                "sd": "FFFFFF",
+                "sst": "128"
+              }
+            ],
+            "nRPCI": "4",
+            "nRTAC": "5179162",
+            "arfcnDL": "713333",
+            "arfcnUL": "713333",
+            "arfcnSUL": "466534982",
+            "bSChannelBwDL": "5",
+            "ssbFrequency": "4700",
+            "ssbPeriodicity": "80",
+            "ssbSubCarrierSpacing": "120",
+            "ssbOffset": "31",
+            "ssbDuration": "1",
+            "bSChannelBwUL": "5",
+            "bSChannelBwSUL": "15",
+            "peeParametersList": [
+              {
+                "idx": "0",
+                "siteIdentification": "S26",
+                "siteLatitude": "0.0",
+                "siteLongitude": "0.0",
+                "siteAltitude": "22.6"
+              }
+            ],
+            "status": "Assigned"
+          }
+        },
+        {
+          "id": "27",
+          "attributes": {
+            "priorityLabel": "326812556",
+            "cellLocalId": "27",
+            "administrativeState": "UNLOCKED",
+            "pLMNInfoList": [
+              {
+                "mcc": "001",
+                "mnc": "01",
+                "sd": "FFFFFF",
+                "sst": "128"
+              }
+            ],
+            "nRPCI": "4",
+            "nRTAC": "5179162",
+            "arfcnDL": "713333",
+            "arfcnUL": "713333",
+            "arfcnSUL": "466534982",
+            "bSChannelBwDL": "5",
+            "ssbFrequency": "4700",
+            "ssbPeriodicity": "80",
+            "ssbSubCarrierSpacing": "120",
+            "ssbOffset": "31",
+            "ssbDuration": "1",
+            "bSChannelBwUL": "5",
+            "bSChannelBwSUL": "15",
+            "peeParametersList": [
+              {
+                "idx": "0",
+                "siteIdentification": "S27",
+                "siteLatitude": "0.0",
+                "siteLongitude": "0.0",
+                "siteAltitude": "22.7"
+              }
+            ],
+            "status": "Assigned"
+          }
+        },
+        {
+          "id": "28",
+          "attributes": {
+            "priorityLabel": "326812556",
+            "cellLocalId": "28",
+            "administrativeState": "UNLOCKED",
+            "pLMNInfoList": [
+              {
+                "mcc": "001",
+                "mnc": "01",
+                "sd": "FFFFFF",
+                "sst": "128"
+              }
+            ],
+            "nRPCI": "4",
+            "nRTAC": "5179162",
+            "arfcnDL": "713333",
+            "arfcnUL": "713333",
+            "arfcnSUL": "466534982",
+            "bSChannelBwDL": "5",
+            "ssbFrequency": "4700",
+            "ssbPeriodicity": "80",
+            "ssbSubCarrierSpacing": "120",
+            "ssbOffset": "31",
+            "ssbDuration": "1",
+            "bSChannelBwUL": "5",
+            "bSChannelBwSUL": "15",
+            "peeParametersList": [
+              {
+                "idx": "0",
+                "siteIdentification": "S28",
+                "siteLatitude": "0.0",
+                "siteLongitude": "0.0",
+                "siteAltitude": "22.8"
+              }
+            ],
+            "status": "Assigned"
+          }
+        },
+        {
+          "id": "29",
+          "attributes": {
+            "priorityLabel": "326812556",
+            "cellLocalId": "29",
+            "administrativeState": "UNLOCKED",
+            "pLMNInfoList": [
+              {
+                "mcc": "001",
+                "mnc": "01",
+                "sd": "FFFFFF",
+                "sst": "128"
+              }
+            ],
+            "nRPCI": "4",
+            "nRTAC": "5179162",
+            "arfcnDL": "713333",
+            "arfcnUL": "713333",
+            "arfcnSUL": "466534982",
+            "bSChannelBwDL": "5",
+            "ssbFrequency": "4700",
+            "ssbPeriodicity": "80",
+            "ssbSubCarrierSpacing": "120",
+            "ssbOffset": "31",
+            "ssbDuration": "1",
+            "bSChannelBwUL": "5",
+            "bSChannelBwSUL": "15",
+            "peeParametersList": [
+              {
+                "idx": "0",
+                "siteIdentification": "S29",
+                "siteLatitude": "0.0",
+                "siteLongitude": "0.0",
+                "siteAltitude": "22.9"
+              }
+            ],
+            "status": "Assigned"
+          }
+        },
+        {
+          "id": "30",
+          "attributes": {
+            "priorityLabel": "326812556",
+            "cellLocalId": "30",
+            "administrativeState": "UNLOCKED",
+            "pLMNInfoList": [
+              {
+                "mcc": "001",
+                "mnc": "01",
+                "sd": "FFFFFF",
+                "sst": "128"
+              }
+            ],
+            "nRPCI": "4",
+            "nRTAC": "5179162",
+            "arfcnDL": "713333",
+            "arfcnUL": "713333",
+            "arfcnSUL": "466534982",
+            "bSChannelBwDL": "5",
+            "ssbFrequency": "4700",
+            "ssbPeriodicity": "80",
+            "ssbSubCarrierSpacing": "120",
+            "ssbOffset": "31",
+            "ssbDuration": "1",
+            "bSChannelBwUL": "5",
+            "bSChannelBwSUL": "15",
+            "peeParametersList": [
+              {
+                "idx": "0",
+                "siteIdentification": "S30",
+                "siteLatitude": "0.0",
+                "siteLongitude": "0.0",
+                "siteAltitude": "23.0"
+              }
+            ],
+            "status": "Assigned"
+          }
+        },
+        {
+          "id": "31",
+          "attributes": {
+            "priorityLabel": "326812556",
+            "cellLocalId": "31",
+            "administrativeState": "UNLOCKED",
+            "pLMNInfoList": [
+              {
+                "mcc": "001",
+                "mnc": "01",
+                "sd": "FFFFFF",
+                "sst": "128"
+              }
+            ],
+            "nRPCI": "4",
+            "nRTAC": "5179162",
+            "arfcnDL": "713333",
+            "arfcnUL": "713333",
+            "arfcnSUL": "466534982",
+            "bSChannelBwDL": "5",
+            "ssbFrequency": "4700",
+            "ssbPeriodicity": "80",
+            "ssbSubCarrierSpacing": "120",
+            "ssbOffset": "31",
+            "ssbDuration": "1",
+            "bSChannelBwUL": "5",
+            "bSChannelBwSUL": "15",
+            "peeParametersList": [
+              {
+                "idx": "0",
+                "siteIdentification": "S31",
+                "siteLatitude": "0.0",
+                "siteLongitude": "0.0",
+                "siteAltitude": "23.1"
+              }
+            ],
+            "status": "Assigned"
+          }
+        },
+        {
+          "id": "32",
+          "attributes": {
+            "priorityLabel": "326812556",
+            "cellLocalId": "32",
+            "administrativeState": "UNLOCKED",
+            "pLMNInfoList": [
+              {
+                "mcc": "001",
+                "mnc": "01",
+                "sd": "FFFFFF",
+                "sst": "128"
+              }
+            ],
+            "nRPCI": "4",
+            "nRTAC": "5179162",
+            "arfcnDL": "713333",
+            "arfcnUL": "713333",
+            "arfcnSUL": "466534982",
+            "bSChannelBwDL": "5",
+            "ssbFrequency": "4700",
+            "ssbPeriodicity": "80",
+            "ssbSubCarrierSpacing": "120",
+            "ssbOffset": "31",
+            "ssbDuration": "1",
+            "bSChannelBwUL": "5",
+            "bSChannelBwSUL": "15",
+            "peeParametersList": [
+              {
+                "idx": "0",
+                "siteIdentification": "S32",
+                "siteLatitude": "0.0",
+                "siteLongitude": "0.0",
+                "siteAltitude": "23.2"
+              }
+            ],
+            "status": "Assigned"
+          }
+        },
+        {
+          "id": "33",
+          "attributes": {
+            "priorityLabel": "326812556",
+            "cellLocalId": "33",
+            "administrativeState": "UNLOCKED",
+            "pLMNInfoList": [
+              {
+                "mcc": "001",
+                "mnc": "01",
+                "sd": "FFFFFF",
+                "sst": "128"
+              }
+            ],
+            "nRPCI": "4",
+            "nRTAC": "5179162",
+            "arfcnDL": "713333",
+            "arfcnUL": "713333",
+            "arfcnSUL": "466534982",
+            "bSChannelBwDL": "5",
+            "ssbFrequency": "4700",
+            "ssbPeriodicity": "80",
+            "ssbSubCarrierSpacing": "120",
+            "ssbOffset": "31",
+            "ssbDuration": "1",
+            "bSChannelBwUL": "5",
+            "bSChannelBwSUL": "15",
+            "peeParametersList": [
+              {
+                "idx": "0",
+                "siteIdentification": "S33",
+                "siteLatitude": "0.0",
+                "siteLongitude": "0.0",
+                "siteAltitude": "23.3"
+              }
+            ],
+            "status": "Assigned"
+          }
+        },
+        {
+          "id": "34",
+          "attributes": {
+            "priorityLabel": "326812556",
+            "cellLocalId": "34",
+            "administrativeState": "UNLOCKED",
+            "pLMNInfoList": [
+              {
+                "mcc": "001",
+                "mnc": "01",
+                "sd": "FFFFFF",
+                "sst": "128"
+              }
+            ],
+            "nRPCI": "4",
+            "nRTAC": "5179162",
+            "arfcnDL": "713333",
+            "arfcnUL": "713333",
+            "arfcnSUL": "466534982",
+            "bSChannelBwDL": "5",
+            "ssbFrequency": "4700",
+            "ssbPeriodicity": "80",
+            "ssbSubCarrierSpacing": "120",
+            "ssbOffset": "31",
+            "ssbDuration": "1",
+            "bSChannelBwUL": "5",
+            "bSChannelBwSUL": "15",
+            "peeParametersList": [
+              {
+                "idx": "0",
+                "siteIdentification": "S34",
+                "siteLatitude": "0.0",
+                "siteLongitude": "0.0",
+                "siteAltitude": "23.4"
+              }
+            ],
+            "status": "Assigned"
+          }
+        },
+        {
+          "id": "35",
+          "attributes": {
+            "priorityLabel": "326812556",
+            "cellLocalId": "35",
+            "administrativeState": "UNLOCKED",
+            "pLMNInfoList": [
+              {
+                "mcc": "001",
+                "mnc": "01",
+                "sd": "FFFFFF",
+                "sst": "128"
+              }
+            ],
+            "nRPCI": "4",
+            "nRTAC": "5179162",
+            "arfcnDL": "713333",
+            "arfcnUL": "713333",
+            "arfcnSUL": "466534982",
+            "bSChannelBwDL": "5",
+            "ssbFrequency": "4700",
+            "ssbPeriodicity": "80",
+            "ssbSubCarrierSpacing": "120",
+            "ssbOffset": "31",
+            "ssbDuration": "1",
+            "bSChannelBwUL": "5",
+            "bSChannelBwSUL": "15",
+            "peeParametersList": [
+              {
+                "idx": "0",
+                "siteIdentification": "S35",
+                "siteLatitude": "0.0",
+                "siteLongitude": "0.0",
+                "siteAltitude": "23.5"
+              }
+            ],
+            "status": "Assigned"
+          }
+        },
+        {
+          "id": "36",
+          "attributes": {
+            "priorityLabel": "326812556",
+            "cellLocalId": "36",
+            "administrativeState": "UNLOCKED",
+            "pLMNInfoList": [
+              {
+                "mcc": "001",
+                "mnc": "01",
+                "sd": "FFFFFF",
+                "sst": "128"
+              }
+            ],
+            "nRPCI": "4",
+            "nRTAC": "5179162",
+            "arfcnDL": "713333",
+            "arfcnUL": "713333",
+            "arfcnSUL": "466534982",
+            "bSChannelBwDL": "5",
+            "ssbFrequency": "4700",
+            "ssbPeriodicity": "80",
+            "ssbSubCarrierSpacing": "120",
+            "ssbOffset": "31",
+            "ssbDuration": "1",
+            "bSChannelBwUL": "5",
+            "bSChannelBwSUL": "15",
+            "peeParametersList": [
+              {
+                "idx": "0",
+                "siteIdentification": "S36",
+                "siteLatitude": "0.0",
+                "siteLongitude": "0.0",
+                "siteAltitude": "23.6"
+              }
+            ],
+            "status": "Assigned"
+          }
+        },
+        {
+          "id": "37",
+          "attributes": {
+            "priorityLabel": "326812556",
+            "cellLocalId": "37",
+            "administrativeState": "UNLOCKED",
+            "pLMNInfoList": [
+              {
+                "mcc": "001",
+                "mnc": "01",
+                "sd": "FFFFFF",
+                "sst": "128"
+              }
+            ],
+            "nRPCI": "4",
+            "nRTAC": "5179162",
+            "arfcnDL": "713333",
+            "arfcnUL": "713333",
+            "arfcnSUL": "466534982",
+            "bSChannelBwDL": "5",
+            "ssbFrequency": "4700",
+            "ssbPeriodicity": "80",
+            "ssbSubCarrierSpacing": "120",
+            "ssbOffset": "31",
+            "ssbDuration": "1",
+            "bSChannelBwUL": "5",
+            "bSChannelBwSUL": "15",
+            "peeParametersList": [
+              {
+                "idx": "0",
+                "siteIdentification": "S37",
+                "siteLatitude": "0.0",
+                "siteLongitude": "0.0",
+                "siteAltitude": "23.7"
+              }
+            ],
+            "status": "Assigned"
+          }
+        },
+        {
+          "id": "38",
+          "attributes": {
+            "priorityLabel": "326812556",
+            "cellLocalId": "38",
+            "administrativeState": "UNLOCKED",
+            "pLMNInfoList": [
+              {
+                "mcc": "001",
+                "mnc": "01",
+                "sd": "FFFFFF",
+                "sst": "128"
+              }
+            ],
+            "nRPCI": "4",
+            "nRTAC": "5179162",
+            "arfcnDL": "713333",
+            "arfcnUL": "713333",
+            "arfcnSUL": "466534982",
+            "bSChannelBwDL": "5",
+            "ssbFrequency": "4700",
+            "ssbPeriodicity": "80",
+            "ssbSubCarrierSpacing": "120",
+            "ssbOffset": "31",
+            "ssbDuration": "1",
+            "bSChannelBwUL": "5",
+            "bSChannelBwSUL": "15",
+            "peeParametersList": [
+              {
+                "idx": "0",
+                "siteIdentification": "S38",
+                "siteLatitude": "0.0",
+                "siteLongitude": "0.0",
+                "siteAltitude": "23.8"
+              }
+            ],
+            "status": "Assigned"
+          }
+        },
+        {
+          "id": "39",
+          "attributes": {
+            "priorityLabel": "326812556",
+            "cellLocalId": "39",
+            "administrativeState": "UNLOCKED",
+            "pLMNInfoList": [
+              {
+                "mcc": "001",
+                "mnc": "01",
+                "sd": "FFFFFF",
+                "sst": "128"
+              }
+            ],
+            "nRPCI": "4",
+            "nRTAC": "5179162",
+            "arfcnDL": "713333",
+            "arfcnUL": "713333",
+            "arfcnSUL": "466534982",
+            "bSChannelBwDL": "5",
+            "ssbFrequency": "4700",
+            "ssbPeriodicity": "80",
+            "ssbSubCarrierSpacing": "120",
+            "ssbOffset": "31",
+            "ssbDuration": "1",
+            "bSChannelBwUL": "5",
+            "bSChannelBwSUL": "15",
+            "peeParametersList": [
+              {
+                "idx": "0",
+                "siteIdentification": "S39",
+                "siteLatitude": "0.0",
+                "siteLongitude": "0.0",
+                "siteAltitude": "23.9"
+              }
+            ],
+            "status": "Assigned"
+          }
+        },
+        {
+          "id": "40",
+          "attributes": {
+            "priorityLabel": "326812556",
+            "cellLocalId": "40",
+            "administrativeState": "UNLOCKED",
+            "pLMNInfoList": [
+              {
+                "mcc": "001",
+                "mnc": "01",
+                "sd": "FFFFFF",
+                "sst": "128"
+              }
+            ],
+            "nRPCI": "4",
+            "nRTAC": "5179162",
+            "arfcnDL": "713333",
+            "arfcnUL": "713333",
+            "arfcnSUL": "466534982",
+            "bSChannelBwDL": "5",
+            "ssbFrequency": "4700",
+            "ssbPeriodicity": "80",
+            "ssbSubCarrierSpacing": "120",
+            "ssbOffset": "31",
+            "ssbDuration": "1",
+            "bSChannelBwUL": "5",
+            "bSChannelBwSUL": "15",
+            "peeParametersList": [
+              {
+                "idx": "0",
+                "siteIdentification": "S40",
+                "siteLatitude": "0.0",
+                "siteLongitude": "0.0",
+                "siteAltitude": "24.0"
+              }
+            ],
+            "status": "Assigned"
+          }
+        },
+        {
+          "id": "41",
+          "attributes": {
+            "priorityLabel": "326812556",
+            "cellLocalId": "41",
+            "administrativeState": "UNLOCKED",
+            "pLMNInfoList": [
+              {
+                "mcc": "001",
+                "mnc": "01",
+                "sd": "FFFFFF",
+                "sst": "128"
+              }
+            ],
+            "nRPCI": "4",
+            "nRTAC": "5179162",
+            "arfcnDL": "713333",
+            "arfcnUL": "713333",
+            "arfcnSUL": "466534982",
+            "bSChannelBwDL": "5",
+            "ssbFrequency": "4700",
+            "ssbPeriodicity": "80",
+            "ssbSubCarrierSpacing": "120",
+            "ssbOffset": "31",
+            "ssbDuration": "1",
+            "bSChannelBwUL": "5",
+            "bSChannelBwSUL": "15",
+            "peeParametersList": [
+              {
+                "idx": "0",
+                "siteIdentification": "S41",
+                "siteLatitude": "0.0",
+                "siteLongitude": "0.0",
+                "siteAltitude": "24.1"
+              }
+            ],
+            "status": "Assigned"
+          }
+        },
+        {
+          "id": "42",
+          "attributes": {
+            "priorityLabel": "326812556",
+            "cellLocalId": "42",
+            "administrativeState": "UNLOCKED",
+            "pLMNInfoList": [
+              {
+                "mcc": "001",
+                "mnc": "01",
+                "sd": "FFFFFF",
+                "sst": "128"
+              }
+            ],
+            "nRPCI": "4",
+            "nRTAC": "5179162",
+            "arfcnDL": "713333",
+            "arfcnUL": "713333",
+            "arfcnSUL": "466534982",
+            "bSChannelBwDL": "5",
+            "ssbFrequency": "4700",
+            "ssbPeriodicity": "80",
+            "ssbSubCarrierSpacing": "120",
+            "ssbOffset": "31",
+            "ssbDuration": "1",
+            "bSChannelBwUL": "5",
+            "bSChannelBwSUL": "15",
+            "peeParametersList": [
+              {
+                "idx": "0",
+                "siteIdentification": "S42",
+                "siteLatitude": "0.0",
+                "siteLongitude": "0.0",
+                "siteAltitude": "24.2"
+              }
+            ],
+            "status": "Assigned"
+          }
+        },
+        {
+          "id": "43",
+          "attributes": {
+            "priorityLabel": "326812556",
+            "cellLocalId": "43",
+            "administrativeState": "UNLOCKED",
+            "pLMNInfoList": [
+              {
+                "mcc": "001",
+                "mnc": "01",
+                "sd": "FFFFFF",
+                "sst": "128"
+              }
+            ],
+            "nRPCI": "4",
+            "nRTAC": "5179162",
+            "arfcnDL": "713333",
+            "arfcnUL": "713333",
+            "arfcnSUL": "466534982",
+            "bSChannelBwDL": "5",
+            "ssbFrequency": "4700",
+            "ssbPeriodicity": "80",
+            "ssbSubCarrierSpacing": "120",
+            "ssbOffset": "31",
+            "ssbDuration": "1",
+            "bSChannelBwUL": "5",
+            "bSChannelBwSUL": "15",
+            "peeParametersList": [
+              {
+                "idx": "0",
+                "siteIdentification": "S43",
+                "siteLatitude": "0.0",
+                "siteLongitude": "0.0",
+                "siteAltitude": "24.3"
+              }
+            ],
+            "status": "Assigned"
+          }
+        },
+        {
+          "id": "44",
+          "attributes": {
+            "priorityLabel": "326812556",
+            "cellLocalId": "44",
+            "administrativeState": "UNLOCKED",
+            "pLMNInfoList": [
+              {
+                "mcc": "001",
+                "mnc": "01",
+                "sd": "FFFFFF",
+                "sst": "128"
+              }
+            ],
+            "nRPCI": "4",
+            "nRTAC": "5179162",
+            "arfcnDL": "713333",
+            "arfcnUL": "713333",
+            "arfcnSUL": "466534982",
+            "bSChannelBwDL": "5",
+            "ssbFrequency": "4700",
+            "ssbPeriodicity": "80",
+            "ssbSubCarrierSpacing": "120",
+            "ssbOffset": "31",
+            "ssbDuration": "1",
+            "bSChannelBwUL": "5",
+            "bSChannelBwSUL": "15",
+            "peeParametersList": [
+              {
+                "idx": "0",
+                "siteIdentification": "S44",
+                "siteLatitude": "0.0",
+                "siteLongitude": "0.0",
+                "siteAltitude": "24.4"
+              }
+            ],
+            "status": "Assigned"
+          }
+        },
+        {
+          "id": "45",
+          "attributes": {
+            "priorityLabel": "326812556",
+            "cellLocalId": "45",
+            "administrativeState": "UNLOCKED",
+            "pLMNInfoList": [
+              {
+                "mcc": "001",
+                "mnc": "01",
+                "sd": "FFFFFF",
+                "sst": "128"
+              }
+            ],
+            "nRPCI": "4",
+            "nRTAC": "5179162",
+            "arfcnDL": "713333",
+            "arfcnUL": "713333",
+            "arfcnSUL": "466534982",
+            "bSChannelBwDL": "5",
+            "ssbFrequency": "4700",
+            "ssbPeriodicity": "80",
+            "ssbSubCarrierSpacing": "120",
+            "ssbOffset": "31",
+            "ssbDuration": "1",
+            "bSChannelBwUL": "5",
+            "bSChannelBwSUL": "15",
+            "peeParametersList": [
+              {
+                "idx": "0",
+                "siteIdentification": "S45",
+                "siteLatitude": "0.0",
+                "siteLongitude": "0.0",
+                "siteAltitude": "24.5"
+              }
+            ],
+            "status": "Assigned"
+          }
+        },
+        {
+          "id": "46",
+          "attributes": {
+            "priorityLabel": "326812556",
+            "cellLocalId": "46",
+            "administrativeState": "UNLOCKED",
+            "pLMNInfoList": [
+              {
+                "mcc": "001",
+                "mnc": "01",
+                "sd": "FFFFFF",
+                "sst": "128"
+              }
+            ],
+            "nRPCI": "4",
+            "nRTAC": "5179162",
+            "arfcnDL": "713333",
+            "arfcnUL": "713333",
+            "arfcnSUL": "466534982",
+            "bSChannelBwDL": "5",
+            "ssbFrequency": "4700",
+            "ssbPeriodicity": "80",
+            "ssbSubCarrierSpacing": "120",
+            "ssbOffset": "31",
+            "ssbDuration": "1",
+            "bSChannelBwUL": "5",
+            "bSChannelBwSUL": "15",
+            "peeParametersList": [
+              {
+                "idx": "0",
+                "siteIdentification": "S46",
+                "siteLatitude": "0.0",
+                "siteLongitude": "0.0",
+                "siteAltitude": "24.6"
+              }
+            ],
+            "status": "Assigned"
+          }
+        },
+        {
+          "id": "47",
+          "attributes": {
+            "priorityLabel": "326812556",
+            "cellLocalId": "47",
+            "administrativeState": "UNLOCKED",
+            "pLMNInfoList": [
+              {
+                "mcc": "001",
+                "mnc": "01",
+                "sd": "FFFFFF",
+                "sst": "128"
+              }
+            ],
+            "nRPCI": "4",
+            "nRTAC": "5179162",
+            "arfcnDL": "713333",
+            "arfcnUL": "713333",
+            "arfcnSUL": "466534982",
+            "bSChannelBwDL": "5",
+            "ssbFrequency": "4700",
+            "ssbPeriodicity": "80",
+            "ssbSubCarrierSpacing": "120",
+            "ssbOffset": "31",
+            "ssbDuration": "1",
+            "bSChannelBwUL": "5",
+            "bSChannelBwSUL": "15",
+            "peeParametersList": [
+              {
+                "idx": "0",
+                "siteIdentification": "S47",
+                "siteLatitude": "0.0",
+                "siteLongitude": "0.0",
+                "siteAltitude": "24.7"
+              }
+            ],
+            "status": "Assigned"
+          }
+        },
+        {
+          "id": "48",
+          "attributes": {
+            "priorityLabel": "326812556",
+            "cellLocalId": "48",
+            "administrativeState": "UNLOCKED",
+            "pLMNInfoList": [
+              {
+                "mcc": "001",
+                "mnc": "01",
+                "sd": "FFFFFF",
+                "sst": "128"
+              }
+            ],
+            "nRPCI": "4",
+            "nRTAC": "5179162",
+            "arfcnDL": "713333",
+            "arfcnUL": "713333",
+            "arfcnSUL": "466534982",
+            "bSChannelBwDL": "5",
+            "ssbFrequency": "4700",
+            "ssbPeriodicity": "80",
+            "ssbSubCarrierSpacing": "120",
+            "ssbOffset": "31",
+            "ssbDuration": "1",
+            "bSChannelBwUL": "5",
+            "bSChannelBwSUL": "15",
+            "peeParametersList": [
+              {
+                "idx": "0",
+                "siteIdentification": "S48",
+                "siteLatitude": "0.0",
+                "siteLongitude": "0.0",
+                "siteAltitude": "24.8"
+              }
+            ],
+            "status": "Assigned"
+          }
+        },
+        {
+          "id": "49",
+          "attributes": {
+            "priorityLabel": "326812556",
+            "cellLocalId": "49",
+            "administrativeState": "UNLOCKED",
+            "pLMNInfoList": [
+              {
+                "mcc": "001",
+                "mnc": "01",
+                "sd": "FFFFFF",
+                "sst": "128"
+              }
+            ],
+            "nRPCI": "4",
+            "nRTAC": "5179162",
+            "arfcnDL": "713333",
+            "arfcnUL": "713333",
+            "arfcnSUL": "466534982",
+            "bSChannelBwDL": "5",
+            "ssbFrequency": "4700",
+            "ssbPeriodicity": "80",
+            "ssbSubCarrierSpacing": "120",
+            "ssbOffset": "31",
+            "ssbDuration": "1",
+            "bSChannelBwUL": "5",
+            "bSChannelBwSUL": "15",
+            "peeParametersList": [
+              {
+                "idx": "0",
+                "siteIdentification": "S49",
+                "siteLatitude": "0.0",
+                "siteLongitude": "0.0",
+                "siteAltitude": "24.9"
+              }
+            ],
+            "status": "Assigned"
+          }
+        },
+        {
+          "id": "50",
+          "attributes": {
+            "priorityLabel": "326812556",
+            "cellLocalId": "50",
+            "administrativeState": "UNLOCKED",
+            "pLMNInfoList": [
+              {
+                "mcc": "001",
+                "mnc": "01",
+                "sd": "FFFFFF",
+                "sst": "128"
+              }
+            ],
+            "nRPCI": "4",
+            "nRTAC": "5179162",
+            "arfcnDL": "713333",
+            "arfcnUL": "713333",
+            "arfcnSUL": "466534982",
+            "bSChannelBwDL": "5",
+            "ssbFrequency": "4700",
+            "ssbPeriodicity": "80",
+            "ssbSubCarrierSpacing": "120",
+            "ssbOffset": "31",
+            "ssbDuration": "1",
+            "bSChannelBwUL": "5",
+            "bSChannelBwSUL": "15",
+            "peeParametersList": [
+              {
+                "idx": "0",
+                "siteIdentification": "S50",
+                "siteLatitude": "0.0",
+                "siteLongitude": "0.0",
+                "siteAltitude": "25.0"
+              }
+            ],
+            "status": "Assigned"
+          }
+        },
+        {
+          "id": "51",
+          "attributes": {
+            "priorityLabel": "326812556",
+            "cellLocalId": "51",
+            "administrativeState": "UNLOCKED",
+            "pLMNInfoList": [
+              {
+                "mcc": "001",
+                "mnc": "01",
+                "sd": "FFFFFF",
+                "sst": "128"
+              }
+            ],
+            "nRPCI": "4",
+            "nRTAC": "5179162",
+            "arfcnDL": "713333",
+            "arfcnUL": "713333",
+            "arfcnSUL": "466534982",
+            "bSChannelBwDL": "5",
+            "ssbFrequency": "4700",
+            "ssbPeriodicity": "80",
+            "ssbSubCarrierSpacing": "120",
+            "ssbOffset": "31",
+            "ssbDuration": "1",
+            "bSChannelBwUL": "5",
+            "bSChannelBwSUL": "15",
+            "peeParametersList": [
+              {
+                "idx": "0",
+                "siteIdentification": "S51",
+                "siteLatitude": "0.0",
+                "siteLongitude": "0.0",
+                "siteAltitude": "25.1"
+              }
+            ],
+            "status": "Assigned"
+          }
+        },
+        {
+          "id": "52",
+          "attributes": {
+            "priorityLabel": "326812556",
+            "cellLocalId": "52",
+            "administrativeState": "UNLOCKED",
+            "pLMNInfoList": [
+              {
+                "mcc": "001",
+                "mnc": "01",
+                "sd": "FFFFFF",
+                "sst": "128"
+              }
+            ],
+            "nRPCI": "4",
+            "nRTAC": "5179162",
+            "arfcnDL": "713333",
+            "arfcnUL": "713333",
+            "arfcnSUL": "466534982",
+            "bSChannelBwDL": "5",
+            "ssbFrequency": "4700",
+            "ssbPeriodicity": "80",
+            "ssbSubCarrierSpacing": "120",
+            "ssbOffset": "31",
+            "ssbDuration": "1",
+            "bSChannelBwUL": "5",
+            "bSChannelBwSUL": "15",
+            "peeParametersList": [
+              {
+                "idx": "0",
+                "siteIdentification": "S52",
+                "siteLatitude": "0.0",
+                "siteLongitude": "0.0",
+                "siteAltitude": "25.2"
+              }
+            ],
+            "status": "Assigned"
+          }
+        }
+      ],
+      "o-ran-smo-teiv-ran:NRSectorCarrier": [
+        {
+          "id": "1",
+          "attributes": {
+            "configuredMaxTxPower": "30",
+            "status": "Assigned"
+          }
+        },
+        {
+          "id": "2",
+          "attributes": {
+            "configuredMaxTxPower": "30",
+            "status": "Assigned"
+          }
+        },
+        {
+          "id": "3",
+          "attributes": {
+            "configuredMaxTxPower": "30",
+            "status": "Assigned"
+          }
+        },
+        {
+          "id": "4",
+          "attributes": {
+            "configuredMaxTxPower": "30",
+            "status": "Assigned"
+          }
+        },
+        {
+          "id": "5",
+          "attributes": {
+            "configuredMaxTxPower": "30",
+            "status": "Assigned"
+          }
+        },
+        {
+          "id": "6",
+          "attributes": {
+            "configuredMaxTxPower": "30",
+            "status": "Assigned"
+          }
+        },
+        {
+          "id": "7",
+          "attributes": {
+            "configuredMaxTxPower": "30",
+            "status": "Assigned"
+          }
+        },
+        {
+          "id": "8",
+          "attributes": {
+            "configuredMaxTxPower": "30",
+            "status": "Assigned"
+          }
+        },
+        {
+          "id": "9",
+          "attributes": {
+            "configuredMaxTxPower": "30",
+            "status": "Assigned"
+          }
+        },
+        {
+          "id": "10",
+          "attributes": {
+            "configuredMaxTxPower": "30",
+            "status": "Assigned"
+          }
+        },
+        {
+          "id": "11",
+          "attributes": {
+            "configuredMaxTxPower": "30",
+            "status": "Assigned"
+          }
+        },
+        {
+          "id": "12",
+          "attributes": {
+            "configuredMaxTxPower": "30",
+            "status": "Assigned"
+          }
+        },
+        {
+          "id": "13",
+          "attributes": {
+            "configuredMaxTxPower": "30",
+            "status": "Assigned"
+          }
+        },
+        {
+          "id": "14",
+          "attributes": {
+            "configuredMaxTxPower": "30",
+            "status": "Assigned"
+          }
+        },
+        {
+          "id": "15",
+          "attributes": {
+            "configuredMaxTxPower": "30",
+            "status": "Assigned"
+          }
+        },
+        {
+          "id": "16",
+          "attributes": {
+            "configuredMaxTxPower": "30",
+            "status": "Assigned"
+          }
+        },
+        {
+          "id": "17",
+          "attributes": {
+            "configuredMaxTxPower": "30",
+            "status": "Assigned"
+          }
+        },
+        {
+          "id": "18",
+          "attributes": {
+            "configuredMaxTxPower": "30",
+            "status": "Assigned"
+          }
+        },
+        {
+          "id": "19",
+          "attributes": {
+            "configuredMaxTxPower": "30",
+            "status": "Assigned"
+          }
+        },
+        {
+          "id": "20",
+          "attributes": {
+            "configuredMaxTxPower": "30",
+            "status": "Assigned"
+          }
+        },
+        {
+          "id": "21",
+          "attributes": {
+            "configuredMaxTxPower": "30",
+            "status": "Assigned"
+          }
+        },
+        {
+          "id": "22",
+          "attributes": {
+            "configuredMaxTxPower": "30",
+            "status": "Assigned"
+          }
+        },
+        {
+          "id": "23",
+          "attributes": {
+            "configuredMaxTxPower": "30",
+            "status": "Assigned"
+          }
+        },
+        {
+          "id": "24",
+          "attributes": {
+            "configuredMaxTxPower": "30",
+            "status": "Assigned"
+          }
+        },
+        {
+          "id": "25",
+          "attributes": {
+            "configuredMaxTxPower": "30",
+            "status": "Assigned"
+          }
+        },
+        {
+          "id": "26",
+          "attributes": {
+            "configuredMaxTxPower": "30",
+            "status": "Assigned"
+          }
+        },
+        {
+          "id": "27",
+          "attributes": {
+            "configuredMaxTxPower": "30",
+            "status": "Assigned"
+          }
+        },
+        {
+          "id": "28",
+          "attributes": {
+            "configuredMaxTxPower": "30",
+            "status": "Assigned"
+          }
+        },
+        {
+          "id": "29",
+          "attributes": {
+            "configuredMaxTxPower": "30",
+            "status": "Assigned"
+          }
+        },
+        {
+          "id": "30",
+          "attributes": {
+            "configuredMaxTxPower": "30",
+            "status": "Assigned"
+          }
+        },
+        {
+          "id": "31",
+          "attributes": {
+            "configuredMaxTxPower": "30",
+            "status": "Assigned"
+          }
+        },
+        {
+          "id": "32",
+          "attributes": {
+            "configuredMaxTxPower": "30",
+            "status": "Assigned"
+          }
+        },
+        {
+          "id": "33",
+          "attributes": {
+            "configuredMaxTxPower": "30",
+            "status": "Assigned"
+          }
+        },
+        {
+          "id": "34",
+          "attributes": {
+            "configuredMaxTxPower": "30",
+            "status": "Assigned"
+          }
+        },
+        {
+          "id": "35",
+          "attributes": {
+            "configuredMaxTxPower": "30",
+            "status": "Assigned"
+          }
+        },
+        {
+          "id": "36",
+          "attributes": {
+            "configuredMaxTxPower": "30",
+            "status": "Assigned"
+          }
+        },
+        {
+          "id": "37",
+          "attributes": {
+            "configuredMaxTxPower": "30",
+            "status": "Assigned"
+          }
+        },
+        {
+          "id": "38",
+          "attributes": {
+            "configuredMaxTxPower": "30",
+            "status": "Assigned"
+          }
+        },
+        {
+          "id": "39",
+          "attributes": {
+            "configuredMaxTxPower": "30",
+            "status": "Assigned"
+          }
+        },
+        {
+          "id": "40",
+          "attributes": {
+            "configuredMaxTxPower": "30",
+            "status": "Assigned"
+          }
+        },
+        {
+          "id": "41",
+          "attributes": {
+            "configuredMaxTxPower": "30",
+            "status": "Assigned"
+          }
+        },
+        {
+          "id": "42",
+          "attributes": {
+            "configuredMaxTxPower": "30",
+            "status": "Assigned"
+          }
+        },
+        {
+          "id": "43",
+          "attributes": {
+            "configuredMaxTxPower": "30",
+            "status": "Assigned"
+          }
+        },
+        {
+          "id": "44",
+          "attributes": {
+            "configuredMaxTxPower": "30",
+            "status": "Assigned"
+          }
+        },
+        {
+          "id": "45",
+          "attributes": {
+            "configuredMaxTxPower": "30",
+            "status": "Assigned"
+          }
+        },
+        {
+          "id": "46",
+          "attributes": {
+            "configuredMaxTxPower": "30",
+            "status": "Assigned"
+          }
+        },
+        {
+          "id": "47",
+          "attributes": {
+            "configuredMaxTxPower": "30",
+            "status": "Assigned"
+          }
+        },
+        {
+          "id": "48",
+          "attributes": {
+            "configuredMaxTxPower": "30",
+            "status": "Assigned"
+          }
+        },
+        {
+          "id": "49",
+          "attributes": {
+            "configuredMaxTxPower": "30",
+            "status": "Assigned"
+          }
+        },
+        {
+          "id": "50",
+          "attributes": {
+            "configuredMaxTxPower": "30",
+            "status": "Assigned"
+          }
+        },
+        {
+          "id": "51",
+          "attributes": {
+            "configuredMaxTxPower": "30",
+            "status": "Assigned"
+          }
+        },
+        {
+          "id": "52",
+          "attributes": {
+            "configuredMaxTxPower": "30",
+            "status": "Assigned"
+          }
+        }
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "o-ran-smo-teiv-rel-oam-ran:MANAGEDELEMENT_MANAGES_ODUFUNCTION": [
+        {
+          "id": "1",
+          "aSide": "VIAVI-Rictest",
+          "bSide": "1",
+          "sourceIds": [
+            "VIAVI-Rictest",
+            "1"
+          ]
+        },
+        {
+          "id": "2",
+          "aSide": "VIAVI-Rictest",
+          "bSide": "2",
+          "sourceIds": [
+            "VIAVI-Rictest",
+            "2"
+          ]
+        },
+        {
+          "id": "3",
+          "aSide": "VIAVI-Rictest",
+          "bSide": "3",
+          "sourceIds": [
+            "VIAVI-Rictest",
+            "3"
+          ]
+        },
+        {
+          "id": "4",
+          "aSide": "VIAVI-Rictest",
+          "bSide": "4",
+          "sourceIds": [
+            "VIAVI-Rictest",
+            "4"
+          ]
+        },
+        {
+          "id": "5",
+          "aSide": "VIAVI-Rictest",
+          "bSide": "5",
+          "sourceIds": [
+            "VIAVI-Rictest",
+            "5"
+          ]
+        },
+        {
+          "id": "6",
+          "aSide": "VIAVI-Rictest",
+          "bSide": "6",
+          "sourceIds": [
+            "VIAVI-Rictest",
+            "6"
+          ]
+        },
+        {
+          "id": "7",
+          "aSide": "VIAVI-Rictest",
+          "bSide": "7",
+          "sourceIds": [
+            "VIAVI-Rictest",
+            "7"
+          ]
+        },
+        {
+          "id": "8",
+          "aSide": "VIAVI-Rictest",
+          "bSide": "8",
+          "sourceIds": [
+            "VIAVI-Rictest",
+            "8"
+          ]
+        },
+        {
+          "id": "9",
+          "aSide": "VIAVI-Rictest",
+          "bSide": "9",
+          "sourceIds": [
+            "VIAVI-Rictest",
+            "9"
+          ]
+        },
+        {
+          "id": "10",
+          "aSide": "VIAVI-Rictest",
+          "bSide": "10",
+          "sourceIds": [
+            "VIAVI-Rictest",
+            "10"
+          ]
+        },
+        {
+          "id": "11",
+          "aSide": "VIAVI-Rictest",
+          "bSide": "11",
+          "sourceIds": [
+            "VIAVI-Rictest",
+            "11"
+          ]
+        },
+        {
+          "id": "12",
+          "aSide": "VIAVI-Rictest",
+          "bSide": "12",
+          "sourceIds": [
+            "VIAVI-Rictest",
+            "12"
+          ]
+        },
+        {
+          "id": "13",
+          "aSide": "VIAVI-Rictest",
+          "bSide": "13",
+          "sourceIds": [
+            "VIAVI-Rictest",
+            "13"
+          ]
+        },
+        {
+          "id": "14",
+          "aSide": "VIAVI-Rictest",
+          "bSide": "14",
+          "sourceIds": [
+            "VIAVI-Rictest",
+            "14"
+          ]
+        },
+        {
+          "id": "15",
+          "aSide": "VIAVI-Rictest",
+          "bSide": "15",
+          "sourceIds": [
+            "VIAVI-Rictest",
+            "15"
+          ]
+        },
+        {
+          "id": "16",
+          "aSide": "VIAVI-Rictest",
+          "bSide": "16",
+          "sourceIds": [
+            "VIAVI-Rictest",
+            "16"
+          ]
+        },
+        {
+          "id": "17",
+          "aSide": "VIAVI-Rictest",
+          "bSide": "17",
+          "sourceIds": [
+            "VIAVI-Rictest",
+            "17"
+          ]
+        },
+        {
+          "id": "18",
+          "aSide": "VIAVI-Rictest",
+          "bSide": "18",
+          "sourceIds": [
+            "VIAVI-Rictest",
+            "18"
+          ]
+        },
+        {
+          "id": "19",
+          "aSide": "VIAVI-Rictest",
+          "bSide": "19",
+          "sourceIds": [
+            "VIAVI-Rictest",
+            "19"
+          ]
+        },
+        {
+          "id": "20",
+          "aSide": "VIAVI-Rictest",
+          "bSide": "20",
+          "sourceIds": [
+            "VIAVI-Rictest",
+            "20"
+          ]
+        },
+        {
+          "id": "21",
+          "aSide": "VIAVI-Rictest",
+          "bSide": "21",
+          "sourceIds": [
+            "VIAVI-Rictest",
+            "21"
+          ]
+        },
+        {
+          "id": "22",
+          "aSide": "VIAVI-Rictest",
+          "bSide": "22",
+          "sourceIds": [
+            "VIAVI-Rictest",
+            "22"
+          ]
+        },
+        {
+          "id": "23",
+          "aSide": "VIAVI-Rictest",
+          "bSide": "23",
+          "sourceIds": [
+            "VIAVI-Rictest",
+            "23"
+          ]
+        },
+        {
+          "id": "24",
+          "aSide": "VIAVI-Rictest",
+          "bSide": "24",
+          "sourceIds": [
+            "VIAVI-Rictest",
+            "24"
+          ]
+        },
+        {
+          "id": "25",
+          "aSide": "VIAVI-Rictest",
+          "bSide": "25",
+          "sourceIds": [
+            "VIAVI-Rictest",
+            "25"
+          ]
+        },
+        {
+          "id": "26",
+          "aSide": "VIAVI-Rictest",
+          "bSide": "26",
+          "sourceIds": [
+            "VIAVI-Rictest",
+            "26"
+          ]
+        },
+        {
+          "id": "27",
+          "aSide": "VIAVI-Rictest",
+          "bSide": "27",
+          "sourceIds": [
+            "VIAVI-Rictest",
+            "27"
+          ]
+        },
+        {
+          "id": "28",
+          "aSide": "VIAVI-Rictest",
+          "bSide": "28",
+          "sourceIds": [
+            "VIAVI-Rictest",
+            "28"
+          ]
+        },
+        {
+          "id": "29",
+          "aSide": "VIAVI-Rictest",
+          "bSide": "29",
+          "sourceIds": [
+            "VIAVI-Rictest",
+            "29"
+          ]
+        },
+        {
+          "id": "30",
+          "aSide": "VIAVI-Rictest",
+          "bSide": "30",
+          "sourceIds": [
+            "VIAVI-Rictest",
+            "30"
+          ]
+        },
+        {
+          "id": "31",
+          "aSide": "VIAVI-Rictest",
+          "bSide": "31",
+          "sourceIds": [
+            "VIAVI-Rictest",
+            "31"
+          ]
+        },
+        {
+          "id": "32",
+          "aSide": "VIAVI-Rictest",
+          "bSide": "32",
+          "sourceIds": [
+            "VIAVI-Rictest",
+            "32"
+          ]
+        },
+        {
+          "id": "33",
+          "aSide": "VIAVI-Rictest",
+          "bSide": "33",
+          "sourceIds": [
+            "VIAVI-Rictest",
+            "33"
+          ]
+        },
+        {
+          "id": "34",
+          "aSide": "VIAVI-Rictest",
+          "bSide": "34",
+          "sourceIds": [
+            "VIAVI-Rictest",
+            "34"
+          ]
+        },
+        {
+          "id": "35",
+          "aSide": "VIAVI-Rictest",
+          "bSide": "35",
+          "sourceIds": [
+            "VIAVI-Rictest",
+            "35"
+          ]
+        },
+        {
+          "id": "36",
+          "aSide": "VIAVI-Rictest",
+          "bSide": "36",
+          "sourceIds": [
+            "VIAVI-Rictest",
+            "36"
+          ]
+        },
+        {
+          "id": "37",
+          "aSide": "VIAVI-Rictest",
+          "bSide": "37",
+          "sourceIds": [
+            "VIAVI-Rictest",
+            "37"
+          ]
+        },
+        {
+          "id": "38",
+          "aSide": "VIAVI-Rictest",
+          "bSide": "38",
+          "sourceIds": [
+            "VIAVI-Rictest",
+            "38"
+          ]
+        },
+        {
+          "id": "39",
+          "aSide": "VIAVI-Rictest",
+          "bSide": "39",
+          "sourceIds": [
+            "VIAVI-Rictest",
+            "39"
+          ]
+        },
+        {
+          "id": "40",
+          "aSide": "VIAVI-Rictest",
+          "bSide": "40",
+          "sourceIds": [
+            "VIAVI-Rictest",
+            "40"
+          ]
+        },
+        {
+          "id": "41",
+          "aSide": "VIAVI-Rictest",
+          "bSide": "41",
+          "sourceIds": [
+            "VIAVI-Rictest",
+            "41"
+          ]
+        },
+        {
+          "id": "42",
+          "aSide": "VIAVI-Rictest",
+          "bSide": "42",
+          "sourceIds": [
+            "VIAVI-Rictest",
+            "42"
+          ]
+        },
+        {
+          "id": "43",
+          "aSide": "VIAVI-Rictest",
+          "bSide": "43",
+          "sourceIds": [
+            "VIAVI-Rictest",
+            "43"
+          ]
+        },
+        {
+          "id": "44",
+          "aSide": "VIAVI-Rictest",
+          "bSide": "44",
+          "sourceIds": [
+            "VIAVI-Rictest",
+            "44"
+          ]
+        },
+        {
+          "id": "45",
+          "aSide": "VIAVI-Rictest",
+          "bSide": "45",
+          "sourceIds": [
+            "VIAVI-Rictest",
+            "45"
+          ]
+        },
+        {
+          "id": "46",
+          "aSide": "VIAVI-Rictest",
+          "bSide": "46",
+          "sourceIds": [
+            "VIAVI-Rictest",
+            "46"
+          ]
+        },
+        {
+          "id": "47",
+          "aSide": "VIAVI-Rictest",
+          "bSide": "47",
+          "sourceIds": [
+            "VIAVI-Rictest",
+            "47"
+          ]
+        },
+        {
+          "id": "48",
+          "aSide": "VIAVI-Rictest",
+          "bSide": "48",
+          "sourceIds": [
+            "VIAVI-Rictest",
+            "48"
+          ]
+        },
+        {
+          "id": "49",
+          "aSide": "VIAVI-Rictest",
+          "bSide": "49",
+          "sourceIds": [
+            "VIAVI-Rictest",
+            "49"
+          ]
+        },
+        {
+          "id": "50",
+          "aSide": "VIAVI-Rictest",
+          "bSide": "50",
+          "sourceIds": [
+            "VIAVI-Rictest",
+            "50"
+          ]
+        },
+        {
+          "id": "51",
+          "aSide": "VIAVI-Rictest",
+          "bSide": "51",
+          "sourceIds": [
+            "VIAVI-Rictest",
+            "51"
+          ]
+        },
+        {
+          "id": "52",
+          "aSide": "VIAVI-Rictest",
+          "bSide": "52",
+          "sourceIds": [
+            "VIAVI-Rictest",
+            "52"
+          ]
+        }
+      ],
+      "o-ran-smo-teiv-ran:ODUFUNCTION_PROVIDES_NRSECTORCARRIER": [
+        {
+          "id": "1",
+          "aSide": "1",
+          "bSide": "1",
+          "sourceIds": [
+            "1",
+            "1"
+          ]
+        },
+        {
+          "id": "2",
+          "aSide": "2",
+          "bSide": "2",
+          "sourceIds": [
+            "2",
+            "2"
+          ]
+        },
+        {
+          "id": "3",
+          "aSide": "3",
+          "bSide": "3",
+          "sourceIds": [
+            "3",
+            "3"
+          ]
+        },
+        {
+          "id": "4",
+          "aSide": "4",
+          "bSide": "4",
+          "sourceIds": [
+            "4",
+            "4"
+          ]
+        },
+        {
+          "id": "5",
+          "aSide": "5",
+          "bSide": "5",
+          "sourceIds": [
+            "5",
+            "5"
+          ]
+        },
+        {
+          "id": "6",
+          "aSide": "6",
+          "bSide": "6",
+          "sourceIds": [
+            "6",
+            "6"
+          ]
+        },
+        {
+          "id": "7",
+          "aSide": "7",
+          "bSide": "7",
+          "sourceIds": [
+            "7",
+            "7"
+          ]
+        },
+        {
+          "id": "8",
+          "aSide": "8",
+          "bSide": "8",
+          "sourceIds": [
+            "8",
+            "8"
+          ]
+        },
+        {
+          "id": "9",
+          "aSide": "9",
+          "bSide": "9",
+          "sourceIds": [
+            "9",
+            "9"
+          ]
+        },
+        {
+          "id": "10",
+          "aSide": "10",
+          "bSide": "10",
+          "sourceIds": [
+            "10",
+            "10"
+          ]
+        },
+        {
+          "id": "11",
+          "aSide": "11",
+          "bSide": "11",
+          "sourceIds": [
+            "11",
+            "11"
+          ]
+        },
+        {
+          "id": "12",
+          "aSide": "12",
+          "bSide": "12",
+          "sourceIds": [
+            "12",
+            "12"
+          ]
+        },
+        {
+          "id": "13",
+          "aSide": "13",
+          "bSide": "13",
+          "sourceIds": [
+            "13",
+            "13"
+          ]
+        },
+        {
+          "id": "14",
+          "aSide": "14",
+          "bSide": "14",
+          "sourceIds": [
+            "14",
+            "14"
+          ]
+        },
+        {
+          "id": "15",
+          "aSide": "15",
+          "bSide": "15",
+          "sourceIds": [
+            "15",
+            "15"
+          ]
+        },
+        {
+          "id": "16",
+          "aSide": "16",
+          "bSide": "16",
+          "sourceIds": [
+            "16",
+            "16"
+          ]
+        },
+        {
+          "id": "17",
+          "aSide": "17",
+          "bSide": "17",
+          "sourceIds": [
+            "17",
+            "17"
+          ]
+        },
+        {
+          "id": "18",
+          "aSide": "18",
+          "bSide": "18",
+          "sourceIds": [
+            "18",
+            "18"
+          ]
+        },
+        {
+          "id": "19",
+          "aSide": "19",
+          "bSide": "19",
+          "sourceIds": [
+            "19",
+            "19"
+          ]
+        },
+        {
+          "id": "20",
+          "aSide": "20",
+          "bSide": "20",
+          "sourceIds": [
+            "20",
+            "20"
+          ]
+        },
+        {
+          "id": "21",
+          "aSide": "21",
+          "bSide": "21",
+          "sourceIds": [
+            "21",
+            "21"
+          ]
+        },
+        {
+          "id": "22",
+          "aSide": "22",
+          "bSide": "22",
+          "sourceIds": [
+            "22",
+            "22"
+          ]
+        },
+        {
+          "id": "23",
+          "aSide": "23",
+          "bSide": "23",
+          "sourceIds": [
+            "23",
+            "23"
+          ]
+        },
+        {
+          "id": "24",
+          "aSide": "24",
+          "bSide": "24",
+          "sourceIds": [
+            "24",
+            "24"
+          ]
+        },
+        {
+          "id": "25",
+          "aSide": "25",
+          "bSide": "25",
+          "sourceIds": [
+            "25",
+            "25"
+          ]
+        },
+        {
+          "id": "26",
+          "aSide": "26",
+          "bSide": "26",
+          "sourceIds": [
+            "26",
+            "26"
+          ]
+        },
+        {
+          "id": "27",
+          "aSide": "27",
+          "bSide": "27",
+          "sourceIds": [
+            "27",
+            "27"
+          ]
+        },
+        {
+          "id": "28",
+          "aSide": "28",
+          "bSide": "28",
+          "sourceIds": [
+            "28",
+            "28"
+          ]
+        },
+        {
+          "id": "29",
+          "aSide": "29",
+          "bSide": "29",
+          "sourceIds": [
+            "29",
+            "29"
+          ]
+        },
+        {
+          "id": "30",
+          "aSide": "30",
+          "bSide": "30",
+          "sourceIds": [
+            "30",
+            "30"
+          ]
+        },
+        {
+          "id": "31",
+          "aSide": "31",
+          "bSide": "31",
+          "sourceIds": [
+            "31",
+            "31"
+          ]
+        },
+        {
+          "id": "32",
+          "aSide": "32",
+          "bSide": "32",
+          "sourceIds": [
+            "32",
+            "32"
+          ]
+        },
+        {
+          "id": "33",
+          "aSide": "33",
+          "bSide": "33",
+          "sourceIds": [
+            "33",
+            "33"
+          ]
+        },
+        {
+          "id": "34",
+          "aSide": "34",
+          "bSide": "34",
+          "sourceIds": [
+            "34",
+            "34"
+          ]
+        },
+        {
+          "id": "35",
+          "aSide": "35",
+          "bSide": "35",
+          "sourceIds": [
+            "35",
+            "35"
+          ]
+        },
+        {
+          "id": "36",
+          "aSide": "36",
+          "bSide": "36",
+          "sourceIds": [
+            "36",
+            "36"
+          ]
+        },
+        {
+          "id": "37",
+          "aSide": "37",
+          "bSide": "37",
+          "sourceIds": [
+            "37",
+            "37"
+          ]
+        },
+        {
+          "id": "38",
+          "aSide": "38",
+          "bSide": "38",
+          "sourceIds": [
+            "38",
+            "38"
+          ]
+        },
+        {
+          "id": "39",
+          "aSide": "39",
+          "bSide": "39",
+          "sourceIds": [
+            "39",
+            "39"
+          ]
+        },
+        {
+          "id": "40",
+          "aSide": "40",
+          "bSide": "40",
+          "sourceIds": [
+            "40",
+            "40"
+          ]
+        },
+        {
+          "id": "41",
+          "aSide": "41",
+          "bSide": "41",
+          "sourceIds": [
+            "41",
+            "41"
+          ]
+        },
+        {
+          "id": "42",
+          "aSide": "42",
+          "bSide": "42",
+          "sourceIds": [
+            "42",
+            "42"
+          ]
+        },
+        {
+          "id": "43",
+          "aSide": "43",
+          "bSide": "43",
+          "sourceIds": [
+            "43",
+            "43"
+          ]
+        },
+        {
+          "id": "44",
+          "aSide": "44",
+          "bSide": "44",
+          "sourceIds": [
+            "44",
+            "44"
+          ]
+        },
+        {
+          "id": "45",
+          "aSide": "45",
+          "bSide": "45",
+          "sourceIds": [
+            "45",
+            "45"
+          ]
+        },
+        {
+          "id": "46",
+          "aSide": "46",
+          "bSide": "46",
+          "sourceIds": [
+            "46",
+            "46"
+          ]
+        },
+        {
+          "id": "47",
+          "aSide": "47",
+          "bSide": "47",
+          "sourceIds": [
+            "47",
+            "47"
+          ]
+        },
+        {
+          "id": "48",
+          "aSide": "48",
+          "bSide": "48",
+          "sourceIds": [
+            "48",
+            "48"
+          ]
+        },
+        {
+          "id": "49",
+          "aSide": "49",
+          "bSide": "49",
+          "sourceIds": [
+            "49",
+            "49"
+          ]
+        },
+        {
+          "id": "50",
+          "aSide": "50",
+          "bSide": "50",
+          "sourceIds": [
+            "50",
+            "50"
+          ]
+        },
+        {
+          "id": "51",
+          "aSide": "51",
+          "bSide": "51",
+          "sourceIds": [
+            "51",
+            "51"
+          ]
+        },
+        {
+          "id": "52",
+          "aSide": "52",
+          "bSide": "52",
+          "sourceIds": [
+            "52",
+            "52"
+          ]
+        }
+      ],
+      "o-ran-smo-teiv-ran:ODUFUNCTION_PROVIDES_NRCELLDU": [
+        {
+          "id": "1",
+          "aSide": "1",
+          "bSide": "1",
+          "sourceIds": [
+            "1",
+            "1"
+          ]
+        },
+        {
+          "id": "2",
+          "aSide": "2",
+          "bSide": "2",
+          "sourceIds": [
+            "2",
+            "2"
+          ]
+        },
+        {
+          "id": "3",
+          "aSide": "3",
+          "bSide": "3",
+          "sourceIds": [
+            "3",
+            "3"
+          ]
+        },
+        {
+          "id": "4",
+          "aSide": "4",
+          "bSide": "4",
+          "sourceIds": [
+            "4",
+            "4"
+          ]
+        },
+        {
+          "id": "5",
+          "aSide": "5",
+          "bSide": "5",
+          "sourceIds": [
+            "5",
+            "5"
+          ]
+        },
+        {
+          "id": "6",
+          "aSide": "6",
+          "bSide": "6",
+          "sourceIds": [
+            "6",
+            "6"
+          ]
+        },
+        {
+          "id": "7",
+          "aSide": "7",
+          "bSide": "7",
+          "sourceIds": [
+            "7",
+            "7"
+          ]
+        },
+        {
+          "id": "8",
+          "aSide": "8",
+          "bSide": "8",
+          "sourceIds": [
+            "8",
+            "8"
+          ]
+        },
+        {
+          "id": "9",
+          "aSide": "9",
+          "bSide": "9",
+          "sourceIds": [
+            "9",
+            "9"
+          ]
+        },
+        {
+          "id": "10",
+          "aSide": "10",
+          "bSide": "10",
+          "sourceIds": [
+            "10",
+            "10"
+          ]
+        },
+        {
+          "id": "11",
+          "aSide": "11",
+          "bSide": "11",
+          "sourceIds": [
+            "11",
+            "11"
+          ]
+        },
+        {
+          "id": "12",
+          "aSide": "12",
+          "bSide": "12",
+          "sourceIds": [
+            "12",
+            "12"
+          ]
+        },
+        {
+          "id": "13",
+          "aSide": "13",
+          "bSide": "13",
+          "sourceIds": [
+            "13",
+            "13"
+          ]
+        },
+        {
+          "id": "14",
+          "aSide": "14",
+          "bSide": "14",
+          "sourceIds": [
+            "14",
+            "14"
+          ]
+        },
+        {
+          "id": "15",
+          "aSide": "15",
+          "bSide": "15",
+          "sourceIds": [
+            "15",
+            "15"
+          ]
+        },
+        {
+          "id": "16",
+          "aSide": "16",
+          "bSide": "16",
+          "sourceIds": [
+            "16",
+            "16"
+          ]
+        },
+        {
+          "id": "17",
+          "aSide": "17",
+          "bSide": "17",
+          "sourceIds": [
+            "17",
+            "17"
+          ]
+        },
+        {
+          "id": "18",
+          "aSide": "18",
+          "bSide": "18",
+          "sourceIds": [
+            "18",
+            "18"
+          ]
+        },
+        {
+          "id": "19",
+          "aSide": "19",
+          "bSide": "19",
+          "sourceIds": [
+            "19",
+            "19"
+          ]
+        },
+        {
+          "id": "20",
+          "aSide": "20",
+          "bSide": "20",
+          "sourceIds": [
+            "20",
+            "20"
+          ]
+        },
+        {
+          "id": "21",
+          "aSide": "21",
+          "bSide": "21",
+          "sourceIds": [
+            "21",
+            "21"
+          ]
+        },
+        {
+          "id": "22",
+          "aSide": "22",
+          "bSide": "22",
+          "sourceIds": [
+            "22",
+            "22"
+          ]
+        },
+        {
+          "id": "23",
+          "aSide": "23",
+          "bSide": "23",
+          "sourceIds": [
+            "23",
+            "23"
+          ]
+        },
+        {
+          "id": "24",
+          "aSide": "24",
+          "bSide": "24",
+          "sourceIds": [
+            "24",
+            "24"
+          ]
+        },
+        {
+          "id": "25",
+          "aSide": "25",
+          "bSide": "25",
+          "sourceIds": [
+            "25",
+            "25"
+          ]
+        },
+        {
+          "id": "26",
+          "aSide": "26",
+          "bSide": "26",
+          "sourceIds": [
+            "26",
+            "26"
+          ]
+        },
+        {
+          "id": "27",
+          "aSide": "27",
+          "bSide": "27",
+          "sourceIds": [
+            "27",
+            "27"
+          ]
+        },
+        {
+          "id": "28",
+          "aSide": "28",
+          "bSide": "28",
+          "sourceIds": [
+            "28",
+            "28"
+          ]
+        },
+        {
+          "id": "29",
+          "aSide": "29",
+          "bSide": "29",
+          "sourceIds": [
+            "29",
+            "29"
+          ]
+        },
+        {
+          "id": "30",
+          "aSide": "30",
+          "bSide": "30",
+          "sourceIds": [
+            "30",
+            "30"
+          ]
+        },
+        {
+          "id": "31",
+          "aSide": "31",
+          "bSide": "31",
+          "sourceIds": [
+            "31",
+            "31"
+          ]
+        },
+        {
+          "id": "32",
+          "aSide": "32",
+          "bSide": "32",
+          "sourceIds": [
+            "32",
+            "32"
+          ]
+        },
+        {
+          "id": "33",
+          "aSide": "33",
+          "bSide": "33",
+          "sourceIds": [
+            "33",
+            "33"
+          ]
+        },
+        {
+          "id": "34",
+          "aSide": "34",
+          "bSide": "34",
+          "sourceIds": [
+            "34",
+            "34"
+          ]
+        },
+        {
+          "id": "35",
+          "aSide": "35",
+          "bSide": "35",
+          "sourceIds": [
+            "35",
+            "35"
+          ]
+        },
+        {
+          "id": "36",
+          "aSide": "36",
+          "bSide": "36",
+          "sourceIds": [
+            "36",
+            "36"
+          ]
+        },
+        {
+          "id": "37",
+          "aSide": "37",
+          "bSide": "37",
+          "sourceIds": [
+            "37",
+            "37"
+          ]
+        },
+        {
+          "id": "38",
+          "aSide": "38",
+          "bSide": "38",
+          "sourceIds": [
+            "38",
+            "38"
+          ]
+        },
+        {
+          "id": "39",
+          "aSide": "39",
+          "bSide": "39",
+          "sourceIds": [
+            "39",
+            "39"
+          ]
+        },
+        {
+          "id": "40",
+          "aSide": "40",
+          "bSide": "40",
+          "sourceIds": [
+            "40",
+            "40"
+          ]
+        },
+        {
+          "id": "41",
+          "aSide": "41",
+          "bSide": "41",
+          "sourceIds": [
+            "41",
+            "41"
+          ]
+        },
+        {
+          "id": "42",
+          "aSide": "42",
+          "bSide": "42",
+          "sourceIds": [
+            "42",
+            "42"
+          ]
+        },
+        {
+          "id": "43",
+          "aSide": "43",
+          "bSide": "43",
+          "sourceIds": [
+            "43",
+            "43"
+          ]
+        },
+        {
+          "id": "44",
+          "aSide": "44",
+          "bSide": "44",
+          "sourceIds": [
+            "44",
+            "44"
+          ]
+        },
+        {
+          "id": "45",
+          "aSide": "45",
+          "bSide": "45",
+          "sourceIds": [
+            "45",
+            "45"
+          ]
+        },
+        {
+          "id": "46",
+          "aSide": "46",
+          "bSide": "46",
+          "sourceIds": [
+            "46",
+            "46"
+          ]
+        },
+        {
+          "id": "47",
+          "aSide": "47",
+          "bSide": "47",
+          "sourceIds": [
+            "47",
+            "47"
+          ]
+        },
+        {
+          "id": "48",
+          "aSide": "48",
+          "bSide": "48",
+          "sourceIds": [
+            "48",
+            "48"
+          ]
+        },
+        {
+          "id": "49",
+          "aSide": "49",
+          "bSide": "49",
+          "sourceIds": [
+            "49",
+            "49"
+          ]
+        },
+        {
+          "id": "50",
+          "aSide": "50",
+          "bSide": "50",
+          "sourceIds": [
+            "50",
+            "50"
+          ]
+        },
+        {
+          "id": "51",
+          "aSide": "51",
+          "bSide": "51",
+          "sourceIds": [
+            "51",
+            "51"
+          ]
+        },
+        {
+          "id": "52",
+          "aSide": "52",
+          "bSide": "52",
+          "sourceIds": [
+            "52",
+            "52"
+          ]
+        }
+      ]
+    }
+  ]
+}
