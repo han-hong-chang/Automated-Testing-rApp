@@ -1,0 +1,22 @@
+{
+  "UE_Config": [
+    {
+      "numberOfUE": 500,
+      "location": "s1",
+      "slice": "eMBB",
+      "targetThroughput": 0.028,
+      "5QI": 1,
+      "mobilityModel": "Stationary",
+      "mobilitySpeed": 0.0
+    },
+    {
+      "numberOfUE": 200,
+      "location": "s2",
+      "slice": "URLLC",
+      "targetThroughput": 0.015,
+      "5QI": 2,
+      "mobilityModel": "Pedestrian",
+      "mobilitySpeed": 3.0
+    }
+  ]
+}

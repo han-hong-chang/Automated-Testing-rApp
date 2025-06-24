@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ include "nonrtric-rapp-test-automation.fullname" . }}
+  labels:
+    {{- include "nonrtric-rapp-test-automation.labels" . | nindent 4 }}
+spec:
+  type: {{ .Values.service.type }}
+  ports:
+    - port: {{ .Values.service.port }}
+      targetPort: http
+      protocol: TCP
+      name: http
+  selector:
+    {{- include "nonrtric-rapp-test-automation.selectorLabels" . | nindent 4 }}

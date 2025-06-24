@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: "{{ include "nonrtric-rapp-test-automation.fullname" . }}-test-connection"
+  labels:
+    {{- include "nonrtric-rapp-test-automation.labels" . | nindent 4 }}
+  annotations:
+    "helm.sh/hook": test
+spec:
+  containers:
+    - name: wget
+      image: busybox
+      command: ['wget']
+      args: ['{{ include "nonrtric-rapp-test-automation.fullname" . }}:{{ .Values.service.port }}']
+  restartPolicy: Never
