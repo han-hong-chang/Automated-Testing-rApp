@@ -29,7 +29,7 @@ def send_payload_to_teiv_kafka(payload_file_path: str):
         security_protocol='SASL_PLAINTEXT',
         sasl_mechanism='SCRAM-SHA-512',
         sasl_plain_username='strimzi-kafka-admin',
-        sasl_plain_password='jzEJKwBqbNTpl7gonFMww1Z9VtMnhuom'
+        sasl_plain_password='WNwEgiWt5gw4QLYVaozQIoi4OdRp4A07'
     )
 
     # Send message to Kafka topic

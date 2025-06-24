@@ -48,15 +48,11 @@ def generate_payload_from_gnb_config(input_path: str, output_path: str):
                 cell = cell_list[i]
                 sector = sector_list[i]
 
-                # Add 'status' and convert attribute values to strings if necessary
+                # Add 'status' key without modifying other types
                 for attr in [odu, cell, sector]:
                     attr["attributes"]["status"] = "Assigned"
-                    attr["attributes"] = {
-                        k: str(v) if not isinstance(v, (list, dict)) else v
-                        for k, v in attr["attributes"].items()
-                    }
 
-                # Append to entities under the correct keys
+                # Append to entities
                 entities[0]["o-ran-smo-teiv-ran:ODUFunction"].append(odu)
                 entities[0]["o-ran-smo-teiv-ran:NRCellDU"].append(cell)
                 entities[0]["o-ran-smo-teiv-ran:NRSectorCarrier"].append(sector)
